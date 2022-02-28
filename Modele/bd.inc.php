@@ -2,7 +2,7 @@
 
 /*
 
-Ajouter les options de connection.
+Ajouter les options de connection. Modifié
 
 */
 
