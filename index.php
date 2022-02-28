@@ -15,6 +15,7 @@
 	<meta name="description" content="<?php echo $description; ?>" />
 	<meta name="robots" content="index,follow,all" />
 	<title><?php echo $title; ?></title>
+	<title>Compagnie Océane</title>
 	
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
