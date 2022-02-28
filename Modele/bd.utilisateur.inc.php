@@ -2,7 +2,7 @@
 
 /*
 
-Modifier les requetes SQL et les arguments des fonctions.
+Requetes et arguments d fonctions à modifier.
 
 */
 
