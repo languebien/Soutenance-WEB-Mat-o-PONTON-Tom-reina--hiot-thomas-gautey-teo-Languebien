@@ -6,3 +6,5 @@ Pour créer la BDD : importer le fichier BDD/bateau.sql
 bonjour
 
 Creamy Pizzas
+
+La GUI, tommy pizza
