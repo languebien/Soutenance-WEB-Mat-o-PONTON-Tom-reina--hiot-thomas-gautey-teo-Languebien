@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-/* R A C I N E */
+/* R A C I N E X*/
 include "getRacine.php";
 
 /* C O N T R O L E U R */
