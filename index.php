@@ -5,8 +5,7 @@
 	include('routes.php');
 ?>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 <head>
  	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="skin/favicon.ico" />
