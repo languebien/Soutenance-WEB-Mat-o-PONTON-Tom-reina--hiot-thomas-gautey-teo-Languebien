@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 22cbed4021e3f6a58655964787993f5abbfcef5f
-=======
->>>>>>> 22cbed4021e3f6a58655964787993f5abbfcef5f
 <!doctype html>
 <html lang="fr">
 <?php
