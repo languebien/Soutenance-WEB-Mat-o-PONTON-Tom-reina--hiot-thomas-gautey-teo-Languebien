@@ -11,7 +11,7 @@ function controleurPrincipal($action) {
     $lesActions["modifieBateau"] = "pages/crudBateau.php";
     $lesActions["bateauTraitement"] = "pages/controleurAcceuil.php";
     $lesActions["acceuil"] = "controleurAcceuil.php";
-    $lesActions["afficheLieu"] = "pages/accueil.php";
+    $lesActions["modifierLieu"] = "pages/accueil.php";
 
     
 
