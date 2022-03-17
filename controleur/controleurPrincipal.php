@@ -4,8 +4,7 @@
 
 function controleurPrincipal($action) {
     $lesActions = array();
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     $lesActions["defaut"] = "controleurAcceuil.php";
     $lesActions["acceuil"] = "pages/controleurAcceuil.php";
     $lesActions["afficheBateau"] = "pages/visuBateau.php";
@@ -13,12 +12,12 @@ function controleurPrincipal($action) {
     $lesActions["bateauTraitement"] = "pages/controleurAcceuil.php";
     $lesActions["acceuil"] = "controleurAcceuil.php";
     
-=======
-=======
->>>>>>> 22cbed4021e3f6a58655964787993f5abbfcef5f
+
+
+
     $lesActions["defaut"] = "à Modifier";
 
->>>>>>> 22cbed4021e3f6a58655964787993f5abbfcef5f
+
     if (array_key_exists($action, $lesActions)) {
         return $lesActions[$action];
     } 
