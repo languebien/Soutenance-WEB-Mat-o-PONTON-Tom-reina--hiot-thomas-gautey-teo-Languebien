@@ -1,22 +1,48 @@
+
+
+<!doctype html>
+<html lang="fr">
 <?php
-session_start();
-
-/* R A C I N E X*/
-include "getRacine.php";
-
-/* C O N T R O L E U R */
-include "$racine/controleur/controleurPrincipal.php";
-
-/* A C T I O N S */
-if (isset($_GET["action"])) {
-    $action = $_GET["action"];
-} 
-else {
-    $action = "defaut";
-}
-
-/* Selon l'action on affiche le fichier. */
-$fichier = controleurPrincipal($action);
-include "$racine/controleur/$fichier";
-
+	include('routes.php');
 ?>
+
+<head>
+ 	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="skin/favicon.ico" />
+	<link rel="icon" href="skin/favicon_anime.gif" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="keywords" content="<?php echo $keywords; ?>" />
+	<meta name="description" content="<?php echo $description; ?>" />
+	<meta name="robots" content="index,follow,all" />
+	<title><?php echo $title; ?></title>
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="datatable/dataTable.bootstrap.min.css">
+
+</head>
+
+
+<body>
+
+	<header>
+		<?php include('vue/entete.php'); ?>
+	</header>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<?php include('vue/menu.php'); ?>
+	</nav>
+
+	<div class="container">
+		<?php include($affiche); ?>
+	</div>	
+
+	<!-- Footer -->
+	<footer class="page-footer font-small blue pt-4"">
+		<?php include('vue/pied_page.php'); ?>
+	</footer>
+	<!-- Footer -->
+
+</body>
+</html>

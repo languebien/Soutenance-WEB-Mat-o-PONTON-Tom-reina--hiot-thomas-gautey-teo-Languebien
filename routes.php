@@ -39,4 +39,6 @@
     
     /* concatenation du chemin du dossier contenant les pages avec le contenu de $affiche */
     $affiche = $cheminPagesAffiche . $affiche; 
+
+	
 ?>

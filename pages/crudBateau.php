@@ -1,6 +1,6 @@
 ﻿<?php
-	session_start();
-	include_once('BDD/connectBdd.php');
+	
+	include_once('Modele/bd.inc.php');
 
 ?>
 	
@@ -52,7 +52,7 @@
 			<tbody>
 				<?php
 					
-					include_once('BDD/connectBdd.php');
+					include_once('Modele/bd.inc.php');
 					$SQL = "SELECT * FROM bateau";
 					$stmt = $connexion->prepare($SQL);
 					$stmt->execute(array()); // on passe dans le tableaux les paramètres si il y en a à fournir (aucun ici)
