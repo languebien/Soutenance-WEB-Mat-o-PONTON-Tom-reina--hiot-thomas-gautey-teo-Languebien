@@ -7,10 +7,10 @@ Ajouter les options de connection.
 */
 
 function connexionPDO() {
-    $login = "root";
-    $mdp = "root";
-    $bd = "Soutenance-WEB";
-    $serveur = "localhost";
+    $login = "";
+    $mdp = "";
+    $bd = "";
+    $serveur = "";
 
     try {
         $conn = new PDO("mysql:host=$serveur;dbname=$bd", $login, $mdp, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\'')); 
