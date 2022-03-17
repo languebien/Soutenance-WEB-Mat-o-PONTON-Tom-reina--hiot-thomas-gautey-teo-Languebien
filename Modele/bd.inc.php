@@ -1,10 +1,6 @@
 <?php
 
-/*
 
-Ajouter les options de connection.
-
-*/
 
 function connexionPDO() {
     $login = "root";

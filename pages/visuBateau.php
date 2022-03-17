@@ -1,6 +1,6 @@
 ﻿<?php
 	session_start();
-	include_once('BDD/connectBdd.php');
+	include_once('Modele/bd.inc.php');
 ?>
 	
 <h1 class="page-header text-center">Liste des Bateaux</h1>
@@ -18,7 +18,9 @@
 			<tbody>
 				<?php
 					
-					include_once('BDD/connectBdd.php');
+				
+					include_once('Modele/bd.inc.php');
+					$connexion = connexionPDO();
 					$SQL = "SELECT * FROM bateau";
 					$stmt = $connexion->prepare($SQL);
 					$stmt->execute(array()); // on passe dans le tableaux les paramètres si il y en a à fournir (aucun ici)
@@ -35,6 +37,7 @@
 							<td>".$row['nbVehicule']."</td>
 						</tr>";
 					}
+				
 				?>
 			</tbody>
 		</table>
