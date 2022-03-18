@@ -20,8 +20,11 @@
 				$description = "page d'accueil de la Compagnie Océane";
 				break;
 			case ("afficheLieu"):
-				$affiche = "xxxxx.php";
+				$affiche = "XXXXXX.php";
 				break;
+			case ("modifierLieu"):
+					$affiche = "XXXXXX.php";
+					break;
 			case ("afficheBateau"):
 				$affiche = "visuBateau.php";
 				break;
@@ -39,4 +42,6 @@
     
     /* concatenation du chemin du dossier contenant les pages avec le contenu de $affiche */
     $affiche = $cheminPagesAffiche . $affiche; 
+
+	
 ?>

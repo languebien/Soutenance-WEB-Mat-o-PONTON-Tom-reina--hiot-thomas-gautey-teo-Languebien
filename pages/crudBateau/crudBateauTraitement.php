@@ -1,5 +1,6 @@
 <?php session_start();
-	include_once('BDD/connectBdd.php');
+	include_once('Modele/bd.inc.php');
+	
 
 	if(isset($_POST['add'])){
 		$nom = $_POST['nom'];
