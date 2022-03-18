@@ -1,9 +1,9 @@
 ﻿<?php
-<<<<<<< HEAD
+
 	session_start();
-=======
+
 	
->>>>>>> e89302f951bc0ab2f93140ba31b7d2b1403c8510
+
 	include_once('Modele/bd.inc.php');
 
 ?>
@@ -57,10 +57,9 @@
 				<?php
 					
 					include_once('Modele/bd.inc.php');
-<<<<<<< HEAD
-=======
+
 					$connexion = connexionPDO();
->>>>>>> e89302f951bc0ab2f93140ba31b7d2b1403c8510
+
 					$SQL = "SELECT * FROM bateau";
 					$stmt = $connexion->prepare($SQL);
 					$stmt->execute(array()); // on passe dans le tableaux les paramètres si il y en a à fournir (aucun ici)
