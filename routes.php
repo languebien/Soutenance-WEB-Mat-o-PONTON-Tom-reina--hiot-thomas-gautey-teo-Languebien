@@ -20,10 +20,10 @@
 				$description = "page d'accueil de la Compagnie Océane";
 				break;
 			case ("afficheLieu"):
-				$affiche = "XXXXXX.php";
+				$affiche = "visuLieu.php";
 				break;
-			case ("modifierLieu"):
-					$affiche = "XXXXXX.php";
+			case ("modifieLieu"):
+					$affiche = "crudLieu.php";
 					break;
 			case ("afficheBateau"):
 				$affiche = "visuBateau.php";

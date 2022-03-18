@@ -10,8 +10,8 @@ function controleurPrincipal($action) {
     $lesActions["afficheBateau"] = "pages/visuBateau.php";
     $lesActions["modifieBateau"] = "pages/crudBateau.php";
     $lesActions["bateauTraitement"] = "pages/controleurAcceuil.php";
-    $lesActions["acceuil"] = "controleurAcceuil.php";
-    $lesActions["modifierLieu"] = "pages/accueil.php";
+    $lesActions["afficheLieu"] = "pages/visuLieu.php";
+    $lesActions["modifieLieu"] = "pages/crudLieu.php";
 
     
 
