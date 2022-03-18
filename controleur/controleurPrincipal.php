@@ -12,7 +12,7 @@ function controleurPrincipal($action) {
     $lesActions["bateauTraitement"] = "pages/controleurAcceuil.php";
     $lesActions["afficheLieu"] = "pages/visuLieu.php";
     $lesActions["modifieLieu"] = "pages/crudLieu.php";
-
+    
     
 
 
