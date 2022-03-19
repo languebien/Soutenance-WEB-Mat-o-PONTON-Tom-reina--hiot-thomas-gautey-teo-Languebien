@@ -1,8 +1,8 @@
 <?php
 
 
-include ("Modele/bd.lieuetports.inc.php");
-
+include ("Modele/bd.ports.inc.php");
+include ("Modele/bd.lieu.inc.php");
 
 $lieu = getLieu();
 $port = getPorts();
