@@ -6,18 +6,17 @@ function controleurPrincipal($action) {
     $lesActions = array();
 
     $lesActions["defaut"] = "controleurAcceuil.php";
-    $lesActions["acceuil"] = "pages/controleurAcceuil.php";
-    $lesActions["afficheBateau"] = "pages/visuBateau.php";
-    $lesActions["modifieBateau"] = "pages/crudBateau.php";
-    $lesActions["bateauTraitement"] = "pages/controleurAcceuil.php";
-    $lesActions["afficheLieu"] = "pages/visuLieu.php";
-    $lesActions["modifieLieu"] = "pages/crudLieu.php";
+    $lesActions["acceuil"] = "controleurAcceuil.php";
+    $lesActions["afficheBateau"] = "controleurBateau.php";
+    $lesActions["modifieBateau"] = "controleurCrudBateau.php";
+    $lesActions["afficheLieu"] = "controleurLieu.php";
+    $lesActions["modifieLieu"] = "controleurCrudLieu.php";
     
     
 
 
 
-    $lesActions["defaut"] = "à Modifier";
+   
 
 
     if (array_key_exists($action, $lesActions)) {

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 	session_start();
 
@@ -8,7 +8,7 @@
 
 ?>
 	
-<h1 class="page-header text-center">CRUD Bateaux</h1>
+<h1 class="page-header text-center">CRUD Lieux</h1>
 	<div class="row">
 		<div class="row">
 		<?php
@@ -46,34 +46,90 @@
 			<thead>
 				<th>ID</th>
 				<th>Nom</th>
-				<th>Longueur</th>
-				<th>Largeur</th>
-				<th>Vitesse</th>
-				<th>Nb Passager</th>
-				<th>Nb Vehicule</th>
-				<th>Action</th>
+				<th>informations</th>
+				<th>ile</th>
 			</thead>
 			<tbody>
 				<?php
 					
 					include_once('Modele/bd.inc.php');
 
-					$connexion = connexionPDO();
-
-					$SQL = "SELECT * FROM bateau";
-					$stmt = $connexion->prepare($SQL);
-					$stmt->execute(array()); // on passe dans le tableaux les paramètres si il y en a à fournir (aucun ici)
-					$bateaux = $stmt->fetchAll();
-					foreach ($bateaux as $row){
+					
+					foreach ($lieu as $row){
 						echo 
 						"<tr>
 							<td>".$row['id']."</td>
 							<td>".$row['nom']."</td>
-							<td>".$row['longueur']."</td>
-							<td>".$row['largeur']."</td>
-							<td>".$row['vitesse']."</td>
-							<td>".$row['nbPassager']."</td>
-							<td>".$row['nbVehicule']."</td>
+							<td>".$row['informations']."</td>
+							<td>".$row['ile']."</td>
+							
+							<td>
+								<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Modifier</a>
+								<a href='#delete_".$row['id']."' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Supprimer</a>
+							</td>
+						</tr>";
+						include('crudBateau/edit_delete_modal.php');
+					}
+				?>
+			</tbody>
+		</table>
+	</div>
+	<h1 class="page-header text-center">CRUD ports</h1>
+	<div class="row">
+		<div class="row">
+		<?php
+			if(isset($_SESSION['error'])){
+				echo
+				"
+				<div class='alert alert-danger text-center'>
+					<button class='close'>&times;</button>
+					".$_SESSION['error']."
+				</div>
+				";
+				unset($_SESSION['error']);
+			}
+			if(isset($_SESSION['success'])){
+				echo
+				"
+				<div class='alert alert-success text-center'>
+					<button class='close'>&times;</button>
+					".$_SESSION['success']."
+				</div>
+				";
+				unset($_SESSION['success']);
+			}
+		?>
+		</div>
+		<div class="row">
+			<a href="#addnew" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Ajouter</a>
+		</div>
+		<div class="height10">
+		</div>
+	</div>	
+		
+	<div class="row">
+		<table id="myTable" class="table table-bordered table-striped">
+			<thead>
+				<th>ID</th>
+				<th>Nom</th>
+				<th>adresse</th>
+				<th>code postal</th>
+				<th>ville</th>
+				<th>lieu</th>
+			</thead>
+			<tbody>
+				<?php
+					
+					
+					foreach ($port as $row){
+						echo 
+						"<tr>
+							<td>".$row['id']."</td>
+							<td>".$row['nom']."</td>
+							<td>".$row['adresse']."</td>
+							<td>".$row['codePostal']."</td>
+							<td>".$row['ville']."</td>
+							<td>".$row['idLieu']."</td>
 							<td>
 								<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Modifier</a>
 								<a href='#delete_".$row['id']."' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Supprimer</a>

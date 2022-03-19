@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="fr">
-
-
+<?php $title = "Compagnie Océane - Accueil";
+$keywords = "accueil compagnie Océane";
+$description = "page d'accueil de la Compagnie Océane";
+?>
 <head>
  	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="skin/favicon.ico" />
