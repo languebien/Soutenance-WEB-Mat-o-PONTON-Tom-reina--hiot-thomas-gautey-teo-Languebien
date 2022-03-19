@@ -8,8 +8,6 @@ $lieu = getLieu();
 $port = getPorts();
 
 
-
-
 include("vue/entete.php");
 include('vue/menu.php');
 include("vue/crudLieu.php");
