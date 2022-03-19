@@ -1,65 +1,62 @@
 <?php
 	session_start();
-	
 ?>
-	
-<h1 class="page-header text-center">Liste des lieux</h1>
-	<div class="row">
-		<table id="myTable" class="table table-bordered table-striped">
-			<thead>
-				<th>ID</th>
-				<th>Nom</th>
-				<th>informations</th>
-				<th>ile</th>
-				
-			</thead>
-			<tbody>
-				<?php
+
+		<div class = "Pizza">
+			<h1 class = "Titre">Liste des lieux</h1>
+			<table class = "Table">
+				<thead>
+					<th class = "Table_thead_th">ID</th>
+					<th class = "Table_thead_th">Nom</th>
+					<th class = "Table_thead_th">Informations</th>
+					<th class = "Table_thead_th">Ile</th>
 					
-					foreach ($lieu as $row){
-						echo 
-						"<tr>
-							<td>".$row['id']."</td>
-							<td>".$row['nom']."</td>
-							<td>".$row['informations']."</td>
-							<td>".$row['ile']."</td>
-						</tr>";
-					}
-				
-				?>
-			</tbody>
-		</table>
-	</div>
-    <h1 class="page-header text-center">Liste des ports</h1>
-	<div class="row">
-		<table id="myTable" class="table table-bordered table-striped">
-			<thead>
-				<th>ID</th>
-				<th>Nom</th>
-				<th>adresse</th>
-				<th>codePostal</th>
-				<th>Ville</th>
-				<th>lieu</th>
-				
-			</thead>
-			<tbody>
-				<?php
+				</thead>
+				<tbody>
+					<?php
+						
+						foreach ($lieu as $row){
+							echo 
+							"<tr>
+								<td>".$row['id']."</td>
+								<td>".$row['nom']."</td>
+								<td>".$row['informations']."</td>
+								<td>".$row['ile']."</td>
+							</tr>";
+						}
 					
-					foreach ($ports as $row){
-						echo 
-						"<tr>
-							<td>".$row['id']."</td>
-							<td>".$row['nom']."</td>
-							<td>".$row['adresse']."</td>
-							<td>".$row['codePostal']."</td>
-							<td>".$row['ville']."</td>
-							<td>".$row['idLieu']."</td>
-							
-						</tr>";
-					}
-				
-				?>
-			</tbody>
-		</table>
-	</div>
+					?>
+				</tbody>
+			</table>
+			<h1 class = "Titre">Liste des ports</h1>
+			<table class = "Table">
+				<thead>
+					<th class = "Table_thead_th">ID</th>
+					<th class = "Table_thead_th">Nom</th>
+					<th class = "Table_thead_th">Adresse</th>
+					<th class = "Table_thead_th">Code Postal</th>
+					<th class = "Table_thead_th">Ville</th>
+					<th class = "Table_thead_th">Lieu</th>
+					
+				</thead>
+				<tbody>
+					<?php
+						
+						foreach ($ports as $row){
+							echo 
+							"<tr>
+								<td>".$row['id']."</td>
+								<td>".$row['nom']."</td>
+								<td>".$row['adresse']."</td>
+								<td>".$row['codePostal']."</td>
+								<td>".$row['ville']."</td>
+								<td>".$row['idLieu']."</td>
+								
+							</tr>";
+						}
+					
+					?>
+				</tbody>
+			</table>
+		</div>
 

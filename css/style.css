@@ -1,40 +1,206 @@
-html {
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* M A S T E R */
+/* Le Wrapper contient l'entièreteé de la page en flex */
 
+body{
+  margin:0;
+  padding:0;
 }
-
-body {
-  margin-bottom: 60px; /* Margin bottom by footer height */
-}
-
-header {
-	background-color: #2196f3 ;
-	font-size: 20.0pt;
-	text-align: center;
-	color: white;
-}
-
-
-footer.page-footer {
-	margin-top:20pt;
-    bottom: 0;
-    color: #fff;
-	padding:5pt;
-}
-
-.blue {
-    background-color: #2196f3 !important;
+div#Wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
 }
 
 
-.height10{
-	height:10px !important;
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* N A V I G A T I O N */
+
+/* Police du Logo */
+@font-face {
+	font-family: "AlphaMonday";
+	src: url('../polices/AlphaMonday.otf');
 }
 
-.mtop10{
-	margin-top:10px;
+/* Barre de Navigation */
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to left, rgba(2,0,36,0.7) 0%, rgba(9,9,121,0.7) 25%, rgba(0,212,255,0.7) 100%);
 }
 
-.modal-label{
-	position:relative;
-	top:7px
+/* Logo */
+.NavBar_Logo {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.Logo {
+  text-align: center;
+  font-family: AlphaMonday;
+  color: white;
+  font-size: 24px;
+}
+
+/* Liens Pages */
+.NavBar .NavBar_Pages {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin-left: 10px;
+}
+.NavBar_Pages_Link {
+  font-family: Arial;
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Liens Connexion */
+.NavBar .NavBar_Admin {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+.NavBar_Admin_Link {
+  font-family: Arial;
+  color: greenyellow;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* A C C E U I L - P R E S E N T A T I O N */
+
+/* Entre Menu et le Footer tout est contenu dans Pizza en flex */
+.Pizza {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Titre par Défaut */
+.Titre {
+  text-align: center;
+  font-family: Arial;
+  color: black;
+  font-size: 26px;
+}
+/* Texte par Défaut */
+.Text {
+  text-align: center;
+  font-family: Arial;
+  color: black;
+  font-size: 14px;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* A F F I C H A G E   B A T E A U X   P O R T S   L I E U X*/
+
+.Table {
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+}
+.Table thead {
+  background-color: aquamarine;
+}
+.Table_thead_th {
+  width: 120px;
+  height: 40px;
+  font-family: Arial;
+  color: black;
+  font-size: 14px;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 5px;
+}
+.Table tbody tr td {
+  width: 120px;
+  height: 40px;
+  font-family: Arial;
+  color: black;
+  font-size: 14px;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 5px;
+}
+
+/* Boutons et spécificitées des tables du crud */
+.Table_thead_th_Action {
+  width: 180px;
+  height: 40px;
+  font-family: Arial;
+  color: black;
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* C O N N E X I O N */
+
+#Connexion {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#TableConnexion {
+  margin: 0 auto;
+}
+#TableConnexion tbody tr td {
+  width: 110px;
+  height: 30px;
+  text-align: right;
+  padding-left: 5px;
+}
+.Bouton {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* F O O T E R */
+
+.Footer {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, rgba(2,0,36,0.7) 0%, rgba(9,9,121,0.7) 25%, rgba(0,212,255,0.7) 100%);
+}
+.Footer_Text {
+  text-align: center;
+  font-family: AlphaMonday;
+  color: white;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 15px;
 }

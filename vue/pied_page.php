@@ -1,7 +1,9 @@
-    <footer class="page-footer font-small blue pt-4">
-        <div class="footer-copyright text-center py-3">© Copyright 2021, TAB
-        </div>
-    </footer>
-    
+        <footer class = "Footer">
+            <p class="Footer_Text">Théo LANGUEBIEN</p>
+            <p class="Footer_Text">Mateo PONTON</p>
+            <p class="Footer_Text">Thomas GAUTHEY</p>
+            <p class="Footer_Text">Tom REINA--HIOT</p>
+        </footer>
+    </div> <!-- Fin Wrapper -->
 </body>
 </html>

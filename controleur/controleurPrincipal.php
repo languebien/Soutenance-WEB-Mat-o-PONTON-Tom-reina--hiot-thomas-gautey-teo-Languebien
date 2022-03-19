@@ -1,7 +1,5 @@
 <?php
 
-// C O N T R O L E U R à Modifier//
-
 function controleurPrincipal($action) {
     $lesActions = array();
 
@@ -11,14 +9,8 @@ function controleurPrincipal($action) {
     $lesActions["modifieBateau"] = "controleurCrudBateau.php";
     $lesActions["afficheLieu"] = "controleurLieu.php";
     $lesActions["modifieLieu"] = "controleurCrudLieu.php";
+    $lesActions["connexion"] = "controleurConnexion.php";
     
-    
-
-
-
-   
-
-
     if (array_key_exists($action, $lesActions)) {
         return $lesActions[$action];
     } 
