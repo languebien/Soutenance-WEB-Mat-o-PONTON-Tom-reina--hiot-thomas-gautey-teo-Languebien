@@ -17,7 +17,7 @@ pour se connecter a la base de donnée il faut crée un fichier LocalBd.inc.php 
 
 ensuite mettrez ses lignes de code:
 
-<?php
+//<?php
 
 $login = "";
    $mdp = "";
