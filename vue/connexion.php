@@ -1,6 +1,6 @@
 ﻿        <div class = "Pizza">
             <p class = "Titre">Connexion</p>
-            <form id = "Connexion" method = "POST" action = ""> <!-- MODIFIER -->
+            <form id = "Connexion" method = "POST" action = "./action=connexion"> <!-- MODIFIER -->
                 <table id = "TableConnexion">
                     <tr>
                         <td><label class = "Texte" for = "">Login :</label></td>
