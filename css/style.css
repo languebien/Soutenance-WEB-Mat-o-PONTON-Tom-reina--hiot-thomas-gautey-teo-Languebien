@@ -95,6 +95,7 @@ div#Wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 800px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -120,19 +121,12 @@ div#Wrapper {
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* A F F I C H A G E   B A T E A U X   P O R T S   L I E U X*/
 
-.Secteurs {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 .Filtres {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -145,6 +139,7 @@ div#Wrapper {
   margin: 0 auto;
   border-style: solid;
   border-width: 1px;
+  width: 100%;
 }
 .Table thead {
   background-color: aquamarine;
