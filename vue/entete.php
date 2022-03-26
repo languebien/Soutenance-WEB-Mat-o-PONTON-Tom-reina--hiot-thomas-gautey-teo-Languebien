@@ -7,7 +7,6 @@ $description = "page d'accueil de la Compagnie Océane";
 <head>
  	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="skin/favicon.ico" />
-	<link rel="icon" type="image/png" href="./images/acceuil.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="keywords" content="<?php echo $keywords; ?>" />

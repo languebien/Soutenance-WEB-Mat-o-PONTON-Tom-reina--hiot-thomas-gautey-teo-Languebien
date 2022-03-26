@@ -226,12 +226,30 @@ div#Wrapper {
   align-items: center;
   background: linear-gradient(to left, rgba(2,0,36,0.7) 0%, rgba(9,9,121,0.7) 25%, rgba(0,212,255,0.7) 100%);
 }
-.Footer_Text {
+.Footer_Creators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Footer_Creators_Text {
   text-align: center;
   font-family: AlphaMonday;
   color: white;
-  font-size: 12px;
+  font-size: 11px;
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 15px;
+}
+.Footer_Creators_GitBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.Footer_Creators_GitBox ion-icon {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
 }
