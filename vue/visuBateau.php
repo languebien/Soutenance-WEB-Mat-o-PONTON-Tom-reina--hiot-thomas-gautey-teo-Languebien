@@ -3,6 +3,26 @@
 ?>
 		<div class = "Pizza">
 			<h1 class = "Titre">Liste des Bateaux</h1>
+			<form id = "AfficherBateaux" action = "">
+				<div class = "Secteurs">
+				<?php
+					/* foreach ($Secteur as $TitreSecteur) {
+						echo 
+						"<input>".$TitreSecteur[' ']."</input>"; // Nom du secteur
+					} */
+				?>
+				</div>
+				<div class = "Filtres">
+					<p class = "Text">Séléctionnez la liaison et la date souhaitée : </p>
+					<select class = "SelectionneLiaison" name = "SelectionneLiaison" title = "SelectionneLiaison">
+						<option value="">Sélectionnez une liaison</option>
+					</select>
+					<select class = "SelectionneDate" name = "SelectionneDate" title = "SelectionneDate">
+						<option value="">Sélectionnez une date</option>
+					</select>
+					<input type = "submit" class = "BoutonBateaux" value = "Afficher les traversées" name = "AfficheTraversees">
+				</div>
+			</form>
 			<table class = "Table">
 				<thead>
 					<th class = "Table_thead_th">ID</th>

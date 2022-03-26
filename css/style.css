@@ -108,6 +108,8 @@ div#Wrapper {
 }
 /* Texte par Défaut */
 .Text {
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-family: Arial;
   color: black;
@@ -117,6 +119,20 @@ div#Wrapper {
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* A F F I C H A G E   B A T E A U X   P O R T S   L I E U X*/
+
+
+.Filtres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.BoutonBateaux {
+  margin: 0;
+  padding: 0;
+}
 
 .Table {
   margin: 0 auto;
