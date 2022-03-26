@@ -1,6 +1,6 @@
 ﻿        <div class = "Pizza">
             <p class = "Titre">Connexion</p>
-            <form id = "Connexion" method = "POST" action = "./controleur/controleurConnexion.php"> <!-- MODIFIER -->
+            <form method = "POST" action = "./?action=connexion"> <!-- MODIFIER -->
                 <table id = "TableConnexion">
                     <tr>
                         <td><label class = "Texte" for = "">Email de connexion :</label></td>
@@ -13,4 +13,9 @@
                 </table>
                 <input type = "submit" class = "Bouton" value = "Connexion" name = "Connexion">
             </form>
+                         Utilisateur de test : <br />
+                        login : test@bts.sio<br />
+                        mot de passe : sio
         </div>
+
+ 

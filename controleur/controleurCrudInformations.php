@@ -1,7 +1,7 @@
 <?php
 
 include ("Modele/bd.informations.inc.php");
-
+include "Modele/bd.authentification.inc.php" ;
 $lieu = getLieu();
 $ports = getPorts();
 $bateaux = getBateaux();

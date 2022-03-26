@@ -2,7 +2,7 @@
 
 
 
-include("Modele/authentification.inc.php");
+include "Modele/bd.authentification.inc.php";
 
 // recuperation des donnees GET, POST, et SESSION
 if (isset($_POST["mailU"]) && isset($_POST["mdpU"])){
@@ -22,7 +22,10 @@ else
 login($mailU,$mdpU);
 
 if (isLoggedOn()){ // si l'utilisateur est connecté on redirige vers le controleur monProfil
-    include "$racine/vue/connecter.php";
+    include("vue/entete.php");
+    include('vue/menu.php');
+    include "vue/connecter.php";
+    include("vue/pied_page.php");
 }
 else{ // l'utilisateur n'est pas connecté, on affiche le formulaire de connexion
     // appel du script de vue 

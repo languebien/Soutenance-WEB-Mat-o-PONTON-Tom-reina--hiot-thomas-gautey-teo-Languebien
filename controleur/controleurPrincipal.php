@@ -9,6 +9,7 @@ function controleurPrincipal($action) {
     $lesActions["afficheInformations"] = "controleurInformations.php";
     $lesActions["modifieInformations"] = "controleurCrudInformations.php";
     $lesActions["connexion"] = "controleurConnexion.php";
+    $lesActions["deconnexion"] = "controleurDeconnexion.php";
     
     if (array_key_exists($action, $lesActions)) {
         return $lesActions[$action];

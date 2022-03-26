@@ -1,6 +1,4 @@
-<?php
-	session_start();
-?>
+
 
 		<div class = "Pizza">
 			<h1 class = "Titre">Nos Bateaux</h1>
