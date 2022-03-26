@@ -12,7 +12,7 @@ function getUtilisateurs() {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("SELECT * FROM fightclub");
+        $req = $cnx->prepare("SELECT * FROM utilisateur");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
@@ -48,7 +48,7 @@ function getUtilisateursByPseudo($pseudo) {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("SELECT * FROM fightclub WHERE pseudo = :pseudo");
+        $req = $cnx->prepare("SELECT * FROM utilisateur WHERE pseudo = :pseudo");
         $req->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
         $req->execute();
 
@@ -66,7 +66,7 @@ function addUtilisateur($pseudo, $optionbts, $pizzapass) {
         $cnx = connexionPDO();
 
         $mdpUCrypt = crypt($pizzapass, "sel");
-        $req = $cnx->prepare("insert into fightclub (pseudo, optionbts, pizzapass) values(:pseudo,:optionbts,:mdp)");
+        $req = $cnx->prepare("insert into utilisateur (pseudo, optionbts, pizzapass) values(:pseudo,:optionbts,:mdp)");
         $req->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
         $req->bindValue(':optionbts', $optionbts, PDO::PARAM_STR);
         $req->bindValue(':mdp', $mdpUCrypt, PDO::PARAM_STR);

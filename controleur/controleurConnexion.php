@@ -1,7 +1,8 @@
 <?php
 
-include("modele/bd.inc.php");
-include("modele/authentification.inc.php");
+
+
+include("Modele/authentification.inc.php");
 
 // recuperation des donnees GET, POST, et SESSION
 if (isset($_POST["mailU"]) && isset($_POST["mdpU"])){
