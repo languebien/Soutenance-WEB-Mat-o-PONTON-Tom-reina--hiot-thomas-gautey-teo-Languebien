@@ -120,7 +120,14 @@ div#Wrapper {
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* A F F I C H A G E   B A T E A U X   P O R T S   L I E U X*/
 
-
+.Secteurs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .Filtres {
   display: flex;
   flex-direction: row;
