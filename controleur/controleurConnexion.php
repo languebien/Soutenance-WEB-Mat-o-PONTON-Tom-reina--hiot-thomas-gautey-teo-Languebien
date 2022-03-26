@@ -29,7 +29,7 @@ else{ // l'utilisateur n'est pas connecté, on affiche le formulaire de connexio
     $titre = "authentification";
     include("vue/entete.php");
     include('vue/menu.php');
-    include("vue/connexion.php");
+    include("vue/visuConnexion.php");
     include("vue/pied_page.php");
 }
 

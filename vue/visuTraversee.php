@@ -2,7 +2,7 @@
 	include_once('Modele/bd.inc.php');
 ?>
 		<div class = "Pizza">
-			<h1 class = "Titre">Liste des Bateaux</h1>
+			<h1 class = "Titre">Réserver une Traversée</h1>
 			<form id = "AfficherBateaux" action = "">
 				<div class = "Secteurs">
 				<?php

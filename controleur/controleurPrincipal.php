@@ -5,10 +5,9 @@ function controleurPrincipal($action) {
 
     $lesActions["defaut"] = "controleurAcceuil.php";
     $lesActions["acceuil"] = "controleurAcceuil.php";
-    $lesActions["afficheBateau"] = "controleurBateau.php";
-    $lesActions["modifieBateau"] = "controleurCrudBateau.php";
-    $lesActions["afficheLieu"] = "controleurLieu.php";
-    $lesActions["modifieLieu"] = "controleurCrudLieu.php";
+    $lesActions["afficheTraversee"] = "controleurTraversee.php";
+    $lesActions["afficheInformations"] = "controleurInformations.php";
+    $lesActions["modifieInformations"] = "controleurCrudInformations.php";
     $lesActions["connexion"] = "controleurConnexion.php";
     
     if (array_key_exists($action, $lesActions)) {

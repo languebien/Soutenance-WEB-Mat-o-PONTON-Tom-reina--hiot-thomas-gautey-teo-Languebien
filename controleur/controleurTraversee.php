@@ -1,14 +1,14 @@
 <?php
-include ("Modele/bd.ports.inc.php");
-include ("Modele/bd.lieu.inc.php");
+
+include ("Modele/bd.informations.inc.php");
+
 $lieu = getLieu();
 $ports = getPorts();
-
+$bateaux = getBateaux(); 
 
 include("vue/entete.php");
 include('vue/menu.php');
-include("vue/visuLieu.php");
+include("vue/visuTraversee.php");
 include("vue/pied_page.php");
-
 
 ?>

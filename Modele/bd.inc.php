@@ -1,7 +1,5 @@
 <?php
 
-
-
 function connexionPDO() {
     
     if ($_SERVER['SERVER_NAME']!= "localhost"){
@@ -28,4 +26,5 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     echo "connexionPDO() : \n";
     print_r(connexionPDO());
 }
+
 ?>
