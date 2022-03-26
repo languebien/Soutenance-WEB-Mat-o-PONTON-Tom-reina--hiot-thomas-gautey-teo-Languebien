@@ -130,9 +130,21 @@ div#Wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.Filtres select {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: aqua;
+  padding: 3px 5px;
+}
 .BoutonBateaux {
   margin: 0;
   padding: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: aqua;
+  padding: 3px 5px;
 }
 
 .Table {
@@ -206,6 +218,7 @@ div#Wrapper {
 
 .Footer {
   margin: 0 auto;
+  margin-top: 30px;
   width: 100%;
   display: flex;
   flex-direction: row;

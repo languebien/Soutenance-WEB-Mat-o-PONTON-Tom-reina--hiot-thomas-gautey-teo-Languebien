@@ -3,7 +3,7 @@
 ?>
 
 		<div class = "Pizza">
-			<h1 class = "Titre">Liste des Bateaux</h1>
+			<h1 class = "Titre">Nos Bateaux</h1>
 			<table class = "Table">
 				<thead>
 					<th class = "Table_thead_th">ID</th>
@@ -33,7 +33,7 @@
 				</tbody>
 			</table>
 
-			<h1 class = "Titre">Liste des lieux</h1>
+			<h1 class = "Titre">Lieux desservis</h1>
 			<table class = "Table">
 				<thead>
 					<th class = "Table_thead_th">ID</th>
@@ -58,7 +58,7 @@
 					?>
 				</tbody>
 			</table>
-			<h1 class = "Titre">Liste des ports</h1>
+			<h1 class = "Titre">Ports desservis</h1>
 			<table class = "Table">
 				<thead>
 					<th class = "Table_thead_th">ID</th>
