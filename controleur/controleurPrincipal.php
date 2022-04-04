@@ -7,12 +7,15 @@ function controleurPrincipal($action) {
     $lesActions["acceuil"] = "controleurAcceuil.php";
     $lesActions["afficheTraversee"] = "controleurTraversee.php";
     $lesActions["afficheInformations"] = "controleurInformations.php";
-    $lesActions["modifieLieu"] = "controleurLieu.php";
+    
     $lesActions["connexion"] = "controleurConnexion.php";
     $lesActions["deconnexion"] = "controleurDeconnexion.php";
-    $lesActions["modifBateau"] = "controleurModifBateau.php";
+    $lesActions["modifBateau"] = "modifBateau.php";
+    $lesActions["modifLieu"] = "modifLieu.php";
+    $lesActions["modifPort"] = "modifPort.php";
     $lesActions["modifiePort"] = "controleurPort.php";
     $lesActions["modifieBateau"] = "controleurBateau.php";
+    $lesActions["modifieLieu"] = "controleurLieu.php";
     
     if (array_key_exists($action, $lesActions)) {
         return $lesActions[$action];
