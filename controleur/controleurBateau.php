@@ -6,7 +6,7 @@ $bateaux = getBateaux();
 
 include("vue/entete.php");
 include('vue/menu.php');
-include("vue/visuCrudInformations.php");
+include("vue/visuCrudBateau.php");
 include("vue/pied_page.php");
 
 ?>
