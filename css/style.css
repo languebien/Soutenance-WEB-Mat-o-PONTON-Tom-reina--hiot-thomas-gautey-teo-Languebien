@@ -31,7 +31,8 @@ div#Wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: linear-gradient(to left, rgba(2,0,36,0.7) 0%, rgba(9,9,121,0.7) 25%, rgba(0,212,255,0.7) 100%);
+  /*background: linear-gradient(to left, rgba(2,0,36,0.7) 0%, rgba(9,9,121,0.7) 25%, rgba(0,212,255,0.7) 100%);*/
+  background:transparent;
 }
 
 /* Logo */
@@ -46,7 +47,7 @@ div#Wrapper {
 .Logo {
   text-align: center;
   font-family: AlphaMonday;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 24px;
 }
 
@@ -62,7 +63,7 @@ div#Wrapper {
 }
 .NavBar_Pages_Link {
   font-family: Arial;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   margin-left: 10px;
   margin-right: 10px;
@@ -79,7 +80,7 @@ div#Wrapper {
 }
 .NavBar_Admin_Link {
   font-family: Arial;
-  color: greenyellow;
+  color: rgb(52, 52, 52);
   font-size: 14px;
   margin-left: 10px;
   margin-right: 10px;
@@ -113,7 +114,7 @@ div#Wrapper {
   padding: 0;
   text-align: center;
   font-family: Arial;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
 
@@ -224,7 +225,9 @@ div#Wrapper {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to left, rgba(2,0,36,0.7) 0%, rgba(9,9,121,0.7) 25%, rgba(0,212,255,0.7) 100%);
+  background-color: transparent;
+  /*background: linear-gradient(to left, rgba(2,0,36,0.7) 0%, rgba(9,9,121,0.7) 25%, rgba(0,212,255,0.7) 100%); */
+
 }
 .Footer_Creators {
   display: flex;
@@ -232,15 +235,17 @@ div#Wrapper {
   justify-content: center;
   align-items: center;
 }
+
 .Footer_Creators_Text {
   text-align: center;
   font-family: AlphaMonday;
-  color: white;
-  font-size: 11px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 15px;
 }
+
 .Footer_Creators_GitBox {
   display: flex;
   flex-direction: row;
@@ -248,8 +253,24 @@ div#Wrapper {
   align-items: center;
   margin-left: 100px;
 }
+
 .Footer_Creators_GitBox ion-icon {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 24px;
   margin-right: 10px;
+}
+
+
+/*PARAMETRE DE LA VIDEO */
+#videoacceuil{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.9;
 }
