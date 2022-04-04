@@ -7,7 +7,7 @@
                 <center><h4 class="modal-title" id="myModalLabel">Modifier bateau</h4></center>
             </div>
             <div class="modal-body">
-				<form method="POST" action="?action=bateauTraitement">
+				<form method="POST" action="?action=modifBateau">
 					<div class="container-fluid">
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
@@ -41,7 +41,7 @@
             	<p class="text-center">Etes-vous sure de vouloir supprimer le bateau <?php echo $row['nom']; ?></p>
 			</div>
             <div class="modal-footer">
-				<form method="POST" action="?action=bateauTraitement">
+				<form method="POST" action="?action=modifBateau">
 					<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 					<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Annuler</button>
 					<button type="submit" name="supr" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Oui</a>

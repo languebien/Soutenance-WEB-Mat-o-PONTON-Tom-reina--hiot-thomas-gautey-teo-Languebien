@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
-			<form method="POST" action="?action=bateauTraitement">
+			<form method="POST" action="?action=modifBateau">
 				<div class="row form-group">
 					<div class="col-sm-2">
 						<label class="control-label modal-label">Nom:</label>
