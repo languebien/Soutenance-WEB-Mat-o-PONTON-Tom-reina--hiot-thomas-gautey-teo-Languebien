@@ -10,7 +10,10 @@
 				<li><a class = "NavBar_Pages_Link" href="index.php?action=afficheInformations">Informations</a></li>
 				<?php
 				if (isLoggedOn()){
-				echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifieInformations">Modifier les Informations</a></li>';
+				echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifieBateau">bateaux</a></li>';
+				echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifieLieu">lieux</a></li>';
+				echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifiePort">ports</a></li>';
+				
 				}
 				
 				?>
