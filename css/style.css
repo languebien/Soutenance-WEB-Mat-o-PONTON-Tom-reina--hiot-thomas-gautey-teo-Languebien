@@ -105,7 +105,7 @@ div#Wrapper {
 .Titre {
   text-align: center;
   font-family: Arial;
-  color: black;
+  color: rgb(29, 32, 45);
   font-size: 26px;
 }
 /* Texte par Défaut */
@@ -115,7 +115,7 @@ div#Wrapper {
   text-align: center;
   font-family: Arial;
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 19px;
 }
 
 
@@ -273,4 +273,25 @@ div#Wrapper {
   bottom: 0;
   z-index: -1;
   opacity: 0.9;
+}
+
+#pixelperfect{
+  height: 20vh;
+  width: 20vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.Titre{
+  font-size: 40px;
+  font-family:AlphaMonday;
+}
+
+.Description{
+  margin: 0 auto;
+  font-family: AlphaMonday;
+  font-size: 70px;
 }
