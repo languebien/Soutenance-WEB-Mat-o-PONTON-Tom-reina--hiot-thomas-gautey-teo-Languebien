@@ -1,18 +1,35 @@
 ﻿<?php
-	include_once('Modele/bd.inc.php');
+	include_once('Modele/bd.informations.inc.php');
 ?>
 		<div class = "Pizza">
 			<h1 class = "Titre">Réserver une Traversée</h1>
 			<form id = "AfficherBateaux" action = "">
 				<div class = "Filtres">
 					<select class = "SelectionneSecteur" name = "SelectionneSecteur" title = "SelectionneSecteur">
-						<option value="">Sélectionnez un Secteur</option>
+						<option value="">Sélectionnez un secteur</option>
+						<?php
+						foreach($Secteur as $unSecteur) {
+                            $Secteur = "";
+                            echo '<option value="'.$unSecteur['libelle'].'" '.$Selected.'>'.$unSecteur['libelle'].'</option>';
+                        }
+						?>
 					</select>
 					<select class = "SelectionneLiaison" name = "SelectionneLiaison" title = "SelectionneLiaison">
-						<option value="">Sélectionnez une liaison</option>
+						<?php
+						foreach($Liaison as $Liaison) {
+                            $Selected = "";
+                            echo '<option value="'.$Liaison['nom'].'" '.$Selected.'>'.$Liaison['nom'].'</option>';
+                        }
+						?>
 					</select>
 					<select class = "SelectionneDate" name = "SelectionneDate" title = "SelectionneDate">
 						<option value="">Sélectionnez une date</option>
+						<?php
+						foreach($Dates as $uneDate) {
+                            $Secteur = "";
+                            echo '<option value="'.$uneDate['dateDep'].'" '.$Selected.'>'.$uneDate['dateDep'].'</option>';
+                        }
+						?>
 					</select>
 					<input type = "submit" class = "BoutonBateaux" value = "Afficher les traversées" name = "AfficheTraversees">
 				</div>

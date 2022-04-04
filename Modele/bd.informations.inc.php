@@ -7,15 +7,15 @@ function getBateaux(){
     $SQL = "SELECT * FROM bateau";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array()); // on passe dans le tableaux les paramètres si il y en a à fournir (aucun ici)
-    $bateaux = $stmt->fetchAll();
-    return $bateaux;
+    $Bateaux = $stmt->fetchAll();
+    return $Bateaux;
 }
 
 // S E C T E U R
 function getSecteur(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
-    $SQL = "";
+    $SQL = "SELECT * FROM secteur;";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array());
     $Secteur = $stmt->fetchAll();
@@ -26,7 +26,7 @@ function getSecteur(){
 function getLiaison(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
-    $SQL = "";
+    $SQL = "SELECT port.nom AS 'NomPortDepart', port.nom AS 'NomPortArrivee', secteur.libelle AS 'secteur' FROM liaison INNER JOIN port ON liaison.idPortDepart = port.id INNER JOIN secteur ON liaison.idSecteur = secteur.id";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array());
     $Liaison = $stmt->fetchAll();
@@ -37,7 +37,7 @@ function getLiaison(){
 function getDates(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
-    $SQL = "";
+    $SQL = "SELECT * FROM traverse";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array());
     $Dates = $stmt->fetchAll();
