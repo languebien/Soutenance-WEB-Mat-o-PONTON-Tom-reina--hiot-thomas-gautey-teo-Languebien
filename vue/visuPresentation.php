@@ -1,8 +1,8 @@
 ﻿        <div class = "Pizza">
-            <p class = "Titre">HOME</p>
+            <p class = "Titre">Coucou les coupains je montre mon site a ma coquilette</p>
             <img src="./images/acceuil.png" id="pixelperfect">
             </img>
-            <p class = "Description">Comming soon</br>
+            <p class = "Description">Je t'aime Marie</br>
             </br>
             </br>
             </p>
