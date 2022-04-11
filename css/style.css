@@ -345,7 +345,8 @@ a {
   width: 200px;
   padding: 7px 30px;
   position: relative;
-  display: block;
+  text-align: center;
+  margin-left: 37.5%;
   text-decoration: none;
   overflow: hidden;
   border-radius: 40px;
@@ -362,6 +363,7 @@ span {
   color: white;
   font-size: 15px;
   letter-spacing: 8px;
+  
 }
 
 .wave {
