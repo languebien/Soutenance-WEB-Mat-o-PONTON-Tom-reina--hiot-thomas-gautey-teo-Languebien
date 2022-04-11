@@ -346,7 +346,7 @@ a {
   padding: 7px 30px;
   position: relative;
   text-align: center;
-  margin-left: 37.5%;
+  
   text-decoration: none;
   overflow: hidden;
   border-radius: 40px;
@@ -364,6 +364,9 @@ span {
   font-size: 15px;
   letter-spacing: 8px;
   
+}
+.orloge {
+  margin: 0 auto;
 }
 
 .wave {

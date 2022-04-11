@@ -14,11 +14,15 @@
             <p class = "moyennedescriptionz">rien de plus important que de commencer</p>
             <p class = "moyennedescriptionzz">chaque journée du bon pied</p>
             <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+            <p class="orloge">
+            <a href="index.php?action=afficheTraversee"><span>reservation</span>
+            <div class="wave"></div>
+</p>
+        </a>
                 
-                <a href="index.php?action=afficheTraversee"><span> reservation</span>
-                <div class="wave"></div>
-                </a>
         </div>
+                
+                     
         
         <video src="./video/video.mp4" id="videoacceuil" autoplay loop muted>
         </video>
