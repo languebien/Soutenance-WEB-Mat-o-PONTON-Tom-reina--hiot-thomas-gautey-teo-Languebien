@@ -3,7 +3,8 @@
 	<div id = "Wrapper">
 		<nav class="NavBar" role="navigation">
 			<ul class="NavBar_Logo">
-				<li><a class = "Logo" href="index.php?action=acceuil">Compagnie Océane</a></li>
+				<li><a
+				 class = "Logo" href="index.php?action=acceuil">Compagnie Océane</a></li>
 			</ul>
 			<ul class="NavBar_Pages">
 				<li><a class = "NavBar_Pages_Link" href="index.php?action=afficheTraversee">Traversées</a></li>
