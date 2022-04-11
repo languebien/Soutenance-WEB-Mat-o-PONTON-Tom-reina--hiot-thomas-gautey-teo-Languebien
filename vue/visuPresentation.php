@@ -1,11 +1,22 @@
-﻿        <div class = "Pizza">
-            <p class = "Titre">HOME</p>
-            <img src="./images/acceuil.png" id="pixelperfect">
-            </img>
-            <p class = "Description">Comming soon</br>
+﻿        
+        <div class = "Pizza">
+            <p class = "Titre">Océane</p>
             </br>
             </br>
-            </p>
+            <p class = "petitedescription">Bonjour</p>
+            </br>
+            </br>
+            <p class = "grossedescription"><strong>Tout commence avec un voyage</strong></p>
+            </br>
+            <p class = "moyennedescription">Laissez vous porter au fil des vagues</br></p>
+            <p class = "moyennedescriptionz">rien de plus important que de commencer</p>
+            <p class = "moyennedescriptionzz">chaque journée du bon pied</p>
+            <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+                <a>
+                <span>HOVER ME</span>
+                <div class="wave"></div>
+                </a>
         </div>
         <video src="./video/video.mp4" id="videoacceuil" autoplay loop muted>
         </video>
+        
