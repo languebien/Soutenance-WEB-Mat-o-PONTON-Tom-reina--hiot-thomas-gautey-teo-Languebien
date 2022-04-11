@@ -2,7 +2,8 @@
 	
 	include_once('Modele/bd.inc.php');
 ?>
-	
+
+
 		<div class = "Pizza">
 			<h1 class = "Titre">CRUD Bateaux</h1>
 			<?php

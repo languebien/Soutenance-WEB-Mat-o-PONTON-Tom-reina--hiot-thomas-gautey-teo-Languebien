@@ -105,7 +105,7 @@ div#Wrapper {
 .Titre {
   text-align: center;
   font-family: Arial;
-  color: rgb(29, 32, 45);
+  color: black;
   font-size: 26px;
 }
 /* Texte par Défaut */
@@ -262,6 +262,13 @@ div#Wrapper {
 
 
 /*PARAMETRE DE LA VIDEO */
+#pizza{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 #videoacceuil{
   height: 100vh;
   width: 100vw;
@@ -272,7 +279,7 @@ div#Wrapper {
   top: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 #pixelperfect{
@@ -286,12 +293,119 @@ div#Wrapper {
 }
 
 .Titre{
-  font-size: 40px;
-  font-family:AlphaMonday;
+  font-size: 70px;
+  font-family: Bahnschrift SemiLight;
+  color: rgb(0, 0, 0);
 }
 
 .Description{
-  margin: 0 auto;
+  text-align: center;
   font-family: AlphaMonday;
   font-size: 70px;
 }
+
+.petitedescription{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.grossedescription{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 29px;
+}
+
+.moyennedescription{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.moyennedescriptionz{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.moyennedescriptionzz{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+
+/* BOUTON*/
+
+
+
+a {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  padding: 7px 30px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+a:hover .wave {
+  top: -120px;
+}
+
+
+span {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 8px;
+}
+
+.wave {
+  width: 200px;
+  height: 200px;
+  background-color: #444857;
+  box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  top: -80px;
+  transition: 0.4s;
+}
+.wave:before, .wave:after {
+  width: 200%;
+  height: 200%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-75%);
+}
+
+.wave::before {
+  border-radius: 45%;
+  background-color: rgba(20,20,20,1);
+  animation: wave 5s linear infinite;
+}
+
+.wave::after {
+  border-radius: 40%;
+  background-color: rgba(20,20,20,0.5);
+  animation: wave 10s linear infinite;
+}
+  
+
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%,-75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%,-75%) rotate(360deg);
+  }
+}
+
+
