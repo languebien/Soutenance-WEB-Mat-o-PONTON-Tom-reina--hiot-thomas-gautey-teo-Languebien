@@ -346,10 +346,13 @@ a {
   padding: 7px 30px;
   position: relative;
   text-align: center;
-  margin-left: 37.5%;
+  
   text-decoration: none;
   overflow: hidden;
   border-radius: 40px;
+}
+#btnpresentation {
+  margin-left: 37.5%;
 }
 
 a:hover .wave {
@@ -365,6 +368,7 @@ span {
   letter-spacing: 8px;
   
 }
+
 
 .wave {
   width: 200px;
