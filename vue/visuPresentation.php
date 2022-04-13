@@ -14,6 +14,7 @@
             <p class = "moyennedescriptionz">rien de plus important que de commencer</p>
             <p class = "moyennedescriptionzz">chaque journée du bon pied</p>
             <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+            </br>
                 
                 <a href="index.php?action=afficheTraversee"><span> reservation</span>
                 <div class="wave"></div>
