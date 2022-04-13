@@ -14,15 +14,15 @@
             <p class = "moyennedescriptionz">rien de plus important que de commencer</p>
             <p class = "moyennedescriptionzz">chaque journée du bon pied</p>
             <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-<<<<<<< HEAD
+
             </br>
-=======
+
             
             <a href="index.php?action=afficheTraversee" id="btnpresentation"><span>reservation</span>
             <div class="wave"></div>
 
         </a>
->>>>>>> e56f52643e2e2977af2f20143903203b15eac9b0
+
                 
         </div>
                 
