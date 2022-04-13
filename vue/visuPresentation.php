@@ -15,7 +15,7 @@
             <p class = "moyennedescriptionzz">chaque journée du bon pied</p>
             <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
             
-            <a href="index.php?action=afficheTraversee"><span>reservation</span>
+            <a href="index.php?action=afficheTraversee" id="btnpresentation"><span>reservation</span>
             <div class="wave"></div>
 
         </a>

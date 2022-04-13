@@ -351,6 +351,9 @@ a {
   overflow: hidden;
   border-radius: 40px;
 }
+#btnpresentation {
+  margin-left: 37.5%;
+}
 
 a:hover .wave {
   top: -120px;
