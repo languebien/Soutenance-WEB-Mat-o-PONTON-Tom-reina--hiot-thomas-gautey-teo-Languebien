@@ -12,4 +12,4 @@ else {
 $fichier = controleurPrincipal($action);
 include "$racine/controleur/$fichier";
 
-     ?>
+?>
