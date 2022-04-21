@@ -65,45 +65,136 @@ div#Wrapper {
   font-family: Arial;
   color: rgb(0, 0, 0);
   font-size: 14px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* A C C E U I L - P R E S E N T A T I O N */
 
-/* Entre Menu et le Footer tout est contenu dans Pizza en flex */
+/* Entre Menu et le Footer tout est contenu dans Acceuil en flex */
+.Acceuil {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 800px;
+  height: 260px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.TitreAcceuil {
+  text-align: center;
+  font-family: Arial;
+  color: black;
+  font-size: 50px;
+  width: 100%;
+}
+
+.Description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.TitreDescription {
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 22px;
+}
+
+.TexteDescription {
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+/* Bouton de Mateo */
+.MateoShelby {
+  margin: 0 auto;
+  width: 220px;
+  padding: 7px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 40px;
+}
+.MateoShelby:hover .wave {
+  top: -120px;
+}
+.MateoShelbyText {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 8px;
+}
+.wave {
+  width: 220px;
+  height: 200px;
+  background-color: #444857;
+  box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  top: -80px;
+  transition: 0.4s;
+}
+.wave:before, .wave:after {
+  width: 200%;
+  height: 200%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-75%);
+}
+.wave::before {
+  border-radius: 45%;
+  background-color: rgba(20,20,20,1);
+  animation: wave 5s linear infinite;
+}
+.wave::after {
+  border-radius: 40%;
+  background-color: rgba(20,20,20,0.5);
+  animation: wave 10s linear infinite;
+}
+@keyframes wave {
+  0% {
+    transform: translate(-50%,-75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%,-75%) rotate(360deg);
+  }
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+/* A F F I C H A G E   T R A V E R S E E S   &   I N F O R M A T I O N S */
+
+/* Wrap */
 .Pizza {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 800px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* Titre par Défaut */
-.Titre {
+/* T R A V E R S E E S */
+.TitreTraversees {
   text-align: center;
   font-family: Arial;
   color: black;
-  font-size: 26px;
+  font-size: 50px;
+  width: 100%;
 }
-/* Texte par Défaut */
-.Text {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: Arial;
-  color: rgb(0, 0, 0);
-  font-size: 19px;
-}
-
-
-/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-/* A F F I C H A G E   B A T E A U X   P O R T S   L I E U X*/
 
 .Filtres {
   display: flex;
@@ -220,26 +311,11 @@ div#Wrapper {
 
 .Footer_Creators_Text {
   text-align: center;
-  font-family: AlphaMonday;
+  font-family: Arial;
   color: rgb(0, 0, 0);
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 15px;
-}
-
-.Footer_Creators_GitBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 100px;
-}
-
-.Footer_Creators_GitBox ion-icon {
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  margin-right: 10px;
 }
 
 
@@ -280,125 +356,14 @@ div#Wrapper {
   color: rgb(0, 0, 0);
 }
 
-.Description{
-  text-align: center;
-  font-family: AlphaMonday;
-  font-size: 70px;
-}
-
-.petitedescription{
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-.grossedescription{
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 29px;
-}
-
-.moyennedescription{
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-.moyennedescriptionz{
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-.moyennedescriptionzz{
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-
-/* BOUTON*/
 
 
 
-a {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  padding: 7px 30px;
-  position: relative;
-  text-align: center;
-  
-  text-decoration: none;
-  overflow: hidden;
-  border-radius: 40px;
-}
-#btnpresentation {
-  margin-left: 37.5%;
-}
 
-a:hover .wave {
-  top: -120px;
-}
-
-
-span {
-  position: relative;
-  z-index: 1;
-  color: white;
-  font-size: 15px;
-  letter-spacing: 8px;
-  
-}
-
-
-.wave {
-  width: 200px;
-  height: 200px;
-  background-color: #444857;
-  box-shadow: inset 0 0 50px rgba(0,0,0,.5);
-  position: absolute;
-  left: 0;
-  top: -80px;
-  transition: 0.4s;
-}
-.wave:before, .wave:after {
-  width: 200%;
-  height: 200%;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,-75%);
-}
-
-.wave::before {
-  border-radius: 45%;
-  background-color: rgba(20,20,20,1);
-  animation: wave 5s linear infinite;
-}
-
-.wave::after {
-  border-radius: 40%;
-  background-color: rgba(20,20,20,0.5);
-  animation: wave 10s linear infinite;
-}
-  
-
-
-@keyframes wave {
-  0% {
-    transform: translate(-50%,-75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%,-75%) rotate(360deg);
-  }
-}
 
 /* CSS DES TABLEAUX*/
 
-.Table_thead_th{
+.Table_thead_th {
   background-color: #898989;
   box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
 }

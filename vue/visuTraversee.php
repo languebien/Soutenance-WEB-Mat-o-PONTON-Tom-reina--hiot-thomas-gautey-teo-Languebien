@@ -2,7 +2,7 @@
 	include_once('Modele/bd.informations.inc.php');
 ?>
 		<div class = "Pizza">
-			<h1 class = "Titre">Réserver une Traversée</h1>
+			<h1 class = "TitreTraversees">Nos Traversées</h1>
 			<form id = "AfficherBateaux" action = "">
 				<div class = "Filtres">
 					<select class = "SelectionneSecteur" name = "SelectionneSecteur" title = "SelectionneSecteur">

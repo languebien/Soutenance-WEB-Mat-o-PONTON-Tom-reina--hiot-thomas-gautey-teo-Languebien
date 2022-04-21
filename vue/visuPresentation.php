@@ -1,28 +1,20 @@
-﻿        <div class = "Pizza">
-            <p class = "Titre">Océane</p>
+﻿        <!-- A C C E U I L  -->
+        <div class = "Acceuil">
+            <p class = "TitreAcceuil">Océane</p>
 
-            </br>
-            </br>
+            <div class = "Description">
+                <p class = "TitreDescription"><strong>Tout commence avec un voyage</strong></p>
+                <p class = "TexteDescription">Laissez vous porter au fil des vagues,
+                    <br>rien de plus important que de commencer,
+                    <br>chaque journée du bon pied !</p>
+            </div>
 
-            <p class = "petitedescription">Bonjour</p>
-
-            </br>
-            </br>
-
-            <p class = "grossedescription"><strong>Tout commence avec un voyage</strong></p>
-
-            </br>
-
-            <p class = "moyennedescription">Laissez vous porter au fil des vagues</br></p>
-            <p class = "moyennedescriptionz">rien de plus important que de commencer</p>
-            <p class = "moyennedescriptionzz">chaque journée du bon pied</p>
             <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
-            </br>
-
-            <a href="index.php?action=afficheTraversee" id="btnpresentation"><span>reservation</span>
-                <div class="wave"></div></a>  
+            
         </div>
+
+        <a class = "MateoShelby" href="index.php?action=afficheTraversee"><span class = "MateoShelbyText">Nos Trajets</span><div class="wave"></div></a>  
         
         <video src="./video/video.mp4" id="videoacceuil" autoplay loop muted></video>
         
