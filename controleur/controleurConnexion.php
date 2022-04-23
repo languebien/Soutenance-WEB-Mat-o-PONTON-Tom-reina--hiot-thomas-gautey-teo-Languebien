@@ -24,7 +24,7 @@ login($mailU,$mdpU);
 if (isLoggedOn()){ // si l'utilisateur est connecté on redirige vers le controleur monProfil
     include("vue/entete.php");
     include('vue/menu.php');
-    include "vue/connecter.php";
+    include "vue/visuConnecter.php";
     include("vue/pied_page.php");
 }
 else{ // l'utilisateur n'est pas connecté, on affiche le formulaire de connexion

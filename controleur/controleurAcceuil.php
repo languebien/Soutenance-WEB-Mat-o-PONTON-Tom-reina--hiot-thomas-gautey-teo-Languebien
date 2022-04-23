@@ -2,6 +2,7 @@
 if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
     $racine="..";
 }
+
 include "Modele/bd.authentification.inc.php" ;
 
 $title = "Compagnie Océane - Accueil";

@@ -1,6 +1,6 @@
 <?php
 
-// B A T E A U X
+// B A T E A U X //
 function getBateaux(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
@@ -11,7 +11,7 @@ function getBateaux(){
     return $Bateaux;
 }
 
-// S E C T E U R
+// S E C T E U R S //
 function getSecteur(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
@@ -22,7 +22,7 @@ function getSecteur(){
     return $Secteur;
 }
 
-// L I A I S O N
+// L I A I S O N S //
 function getLiaison(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
@@ -33,7 +33,7 @@ function getLiaison(){
     return $Liaison;
 }
 
-// D A T E S
+// D A T E S //
 function getDates(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
@@ -44,7 +44,7 @@ function getDates(){
     return $Dates;
 }
 
-// L I E U
+// L I E U X //
 function getLieu() {
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
@@ -55,11 +55,11 @@ function getLieu() {
     return $lieu;
 }
 
-// P O R T S
+// P O R T S avec nom des Lieux //
 function getPorts (){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
-    $SQL = "SELECT * FROM port";
+    $SQL = "SELECT port.id, port.nom AS 'nomPort', port.adresse, port.codePostal, port.ville, lieu.nom AS 'nomLieu' FROM port INNER JOIN lieu ON port.idLieu = lieu.id;";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array()); // on passe dans le tableaux les paramètres si il y en a à fournir (aucun ici)
     $ports = $stmt->fetchAll();

@@ -5,8 +5,9 @@ function controleurPrincipal($action) {
 
     $lesActions["defaut"] = "controleurAcceuil.php";
     $lesActions["acceuil"] = "controleurAcceuil.php";
-    $lesActions["afficheTraversee"] = "controleurTraversee.php";
-    $lesActions["afficheInformations"] = "controleurInformations.php";
+    $lesActions["afficheSecteurs"] = "controleurSecteurs.php";
+    $lesActions["affichePorts"] = "controleurPorts.php";
+    $lesActions["afficheBateaux"] = "controleurBateaux.php";
     
     $lesActions["connexion"] = "controleurConnexion.php";
     $lesActions["deconnexion"] = "controleurDeconnexion.php";
