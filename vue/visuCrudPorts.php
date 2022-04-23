@@ -1,11 +1,9 @@
-
 <?php
-	
 	include_once('Modele/bd.inc.php');
 ?>
-
-<div class = "Pizza">
-<h1 class = "Titre">CRUD Ports</h1>
+		<div class = "Pizza">
+			<h1 class = "TitreInfo">CRUD Ports</h1>
+			<p class = "TexteInfo">Ajoutez, modifiez et supprimez des ports.</p>
 			<?php
 				if(isset($_SESSION['error'])){
 					echo
@@ -31,30 +29,28 @@
 			
 			<a href="#addnew" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Ajouter</a>
 			
-			<table class = "Table">
-				<thead>
-					<th class = "Table_thead_th">ID</th>
-					<th class = "Table_thead_th">Nom</th>
-					<th class = "Table_thead_th">Adresse</th>
-					<th class = "Table_thead_th">Code Postal</th>
-					<th class = "Table_thead_th">Ville</th>
-					<th class = "Table_thead_th">Lieu</th>
-					<th class = "Table_thead_th_Action">Action</th>
+			<table class = "Tableau_CRUD">
+				<thead class = "Tableau_Entete">
+					<th class = "Tableau_TitreColonne">ID</th>
+					<th class = "Tableau_TitreColonne">Nom</th>
+					<th class = "Tableau_TitreColonne">Adresse</th>
+					<th class = "Tableau_TitreColonne">Code Postal</th>
+					<th class = "Tableau_TitreColonne">Ville</th>
+					<th class = "Tableau_TitreColonne">Lieu</th>
+					<th class = "Tableau_TitreColonne">Action</th>
 				</thead>
 				<tbody>
 					<?php
-						
-						
-						foreach ($ports as $row){
+						foreach ($Ports as $row){
 							echo 
 							"<tr>
-								<td>".$row['id']."</td>
-								<td>".$row['nom']."</td>
-								<td>".$row['adresse']."</td>
-								<td>".$row['codePostal']."</td>
-								<td>".$row['ville']."</td>
-								<td>".$row['idLieu']."</td>
-								<td>
+								<td class = 'Tableau_TexteColonne'>".$row['id']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['nom']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['adresse']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['codePostal']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['ville']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['idLieu']."</td>
+								<td class = 'Tableau_TexteColonne'>
 									<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Modifier</a>
 									<a href='#delete_".$row['id']."' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Supprimer</a>
 								</td>
@@ -65,7 +61,7 @@
 				</tbody>
 			</table>
 
-</div>
+		</div>
 
 <?php include('crudPort/add_modal.php') ?>
 

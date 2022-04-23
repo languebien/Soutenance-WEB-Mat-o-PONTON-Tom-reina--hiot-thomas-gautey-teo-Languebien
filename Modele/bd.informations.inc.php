@@ -1,15 +1,28 @@
 <?php
 
+
 // B A T E A U X //
 function getBateaux(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
     $SQL = "SELECT * FROM bateau";
     $stmt = $connexion->prepare($SQL);
-    $stmt->execute(array()); // on passe dans le tableaux les paramètres si il y en a à fournir (aucun ici)
+    $stmt->execute(array());
     $Bateaux = $stmt->fetchAll();
     return $Bateaux;
 }
+
+// Bateaux selon le Secteur sélécionné //
+function getBateauxAvecSecteur($SecteurSelection) {
+    include_once('Modele/bd.inc.php');
+    $connexion = connexionPDO();
+    $SQL = "SELECT * FROM bateau INNER JOIN traverse ON bateau.id = traverse.idBateau INNER JOIN liaison ON traverse.idLiaison = liaison.id INNER JOIN secteur ON liaison.idSecteur = secteur.id WHERE secteur.libelle = ?;";
+    $stmt = $connexion->prepare($SQL);
+    $stmt->execute(array($SecteurSelection));
+    $Bateaux = $stmt->fetchAll();
+    return $Bateaux;
+}
+
 
 // S E C T E U R S //
 function getSecteur(){
@@ -22,6 +35,7 @@ function getSecteur(){
     return $Secteur;
 }
 
+
 // L I A I S O N S //
 function getLiaison(){
     include_once('Modele/bd.inc.php');
@@ -32,6 +46,7 @@ function getLiaison(){
     $Liaison = $stmt->fetchAll();
     return $Liaison;
 }
+
 
 // D A T E S //
 function getDates(){
@@ -44,24 +59,47 @@ function getDates(){
     return $Dates;
 }
 
+
 // L I E U X //
-function getLieu() {
+function getLieux() {
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
     $SQL = "SELECT * FROM lieu";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array());
-    $lieu = $stmt->fetchAll();
-    return $lieu;
+    $Lieux = $stmt->fetchAll();
+    return $Lieux;
+}
+
+
+// P O R T S //
+function getPorts (){
+    include_once('Modele/bd.inc.php');
+    $connexion = connexionPDO();
+    $SQL = "SELECT * FROM port;";
+    $stmt = $connexion->prepare($SQL);
+    $stmt->execute(array());
+    $Ports = $stmt->fetchAll();
+    return $Ports;
 }
 
 // P O R T S avec nom des Lieux //
-function getPorts (){
+function getPortsAmeliore (){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
     $SQL = "SELECT port.id, port.nom AS 'nomPort', port.adresse, port.codePostal, port.ville, lieu.nom AS 'nomLieu' FROM port INNER JOIN lieu ON port.idLieu = lieu.id;";
     $stmt = $connexion->prepare($SQL);
-    $stmt->execute(array()); // on passe dans le tableaux les paramètres si il y en a à fournir (aucun ici)
-    $ports = $stmt->fetchAll();
-    return $ports;
+    $stmt->execute(array());
+    $Ports = $stmt->fetchAll();
+    return $Ports;
+}
+// Ports avec la séléction du secteur //
+function getPortsAvecSecteur($SecteurSelection) {
+    include_once('Modele/bd.inc.php');
+    $connexion = connexionPDO();
+    $SQL = "SELECT port.id, port.nom AS 'nomPort', port.adresse, port.codePostal, port.ville, lieu.nom AS 'nomLieu' FROM port INNER JOIN lieu ON port.idLieu = lieu.id INNER JOIN liaison ON port.id = liaison.idPortDepart INNER JOIN secteur ON liaison.idSecteur = secteur.id WHERE secteur.libelle = ?;";
+    $stmt = $connexion->prepare($SQL);
+    $stmt->execute(array($SecteurSelection));
+    $Ports = $stmt->fetchAll();
+    return $Ports;
 }

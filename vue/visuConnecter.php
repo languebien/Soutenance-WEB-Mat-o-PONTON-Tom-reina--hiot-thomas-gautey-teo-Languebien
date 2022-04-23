@@ -1,5 +1,4 @@
-<div class = "Pizza">
-	<p class = "TexteConnecte">Bonjour vous êtes connecté !</p>
-	<a href="https://localhost/Soutenance-WEB-Mat-o-PONTON-Tom-reina--hiot-thomas-gautey-teo-Languebien/index.php?action=acceuil"> retour a l'accueil</a> </br>
-
-</div>
+		<div class = "Pizza">
+			<p class = "TitreInfo">Bonjour <?php echo $Utilisateur['pseudoU']; ?>, vous êtes connecté !</p>
+			<a class = "LinkInfo" href="index.php?action=acceuil"> retour a l'accueil</a>
+		</div>

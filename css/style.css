@@ -174,7 +174,7 @@ div#Wrapper {
 
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-/* A F F I C H A G E   T R A V E R S E E S   &   I N F O R M A T I O N S */
+/* A F F I C H A G E   P R I N C I P A L   D E S   P A G E S */
 
 /* Wrap */
 .Pizza {
@@ -201,12 +201,23 @@ div#Wrapper {
   color: black;
   font-size: 20px;
 }
+.LinkInfo {
+  text-align: center;
+  font-family: Arial;
+  color: blue;
+  font-size: 20px;
+}
 
 
 /* T O U S   L E S   T A B L E A U X */
 .Tableau {
   margin: 0 auto;
   width: 100%;
+}
+.Tableau_CRUD {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 10px;
 }
 .Tableau_Entete {
   background-color: #ffffff;
@@ -243,41 +254,32 @@ div#Wrapper {
   display: inline-block;
 }
 
-/* S E C T E U R S */
 
-.Filtres {
+/* B A T E A U X */
+#FormulaireSelectionBateaux {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.Filtres select {
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  background-color: rgb(255, 255, 255);
-  padding: 3px 5px;
-}
-.BoutonBateaux {
-  margin: 0;
-  padding: 0;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  background-color: rgb(92, 92, 92);
-  padding: 3px 5px;
+  padding-bottom: 10px;
 }
 
-
+/* P O R T S */
+#FormulaireSelectionPorts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 10px;
+}
 
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /* C O N N E X I O N */
 
-form {
+#FormulaireConnexion {
   width: 100%;
 }
 #Connexion {
@@ -310,9 +312,6 @@ form {
   margin: 0 auto;
   width: 150px;
   margin-top: 30px;
-}
-.ConfigText {
-
 }
 
 

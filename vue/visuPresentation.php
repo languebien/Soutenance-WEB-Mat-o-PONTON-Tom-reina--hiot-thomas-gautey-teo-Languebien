@@ -14,7 +14,7 @@
             
         </div>
 
-        <a class = "MateoShelby" href="index.php?action=afficheTraversee"><span class = "MateoShelbyText">Découvrir</span><div class="wave"></div></a>  
+        <a class = "MateoShelby" href="index.php?action=afficheSecteurs"><span class = "MateoShelbyText">Découvrir</span><div class="wave"></div></a>  
         
         <video src="./video/video.mp4" id="videoacceuil" autoplay loop muted></video>
         

@@ -1,10 +1,9 @@
 <?php
-	
 	include_once('Modele/bd.inc.php');
 ?>
-
-<div class = "Pizza">
-<h1 class = "Titre">CRUD Lieux</h1>
+		<div class = "Pizza">
+			<h1 class = "TitreInfo">CRUD Lieux</h1>
+			<p class = "TexteInfo">Ajoutez, modifiez et supprimez des lieux.</p>
 			<?php
 				if(isset($_SESSION['error'])){
 					echo
@@ -29,29 +28,25 @@
 			?>
 			<a href="#addnew" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Ajouter</a>
 		
-			<table class = "Table" >
-				<thead>
-					<th class = "Table_thead_th">ID</th>
-					<th class = "Table_thead_th">Nom</th>
-					<th class = "Table_thead_th">Informations</th>
-					<th class = "Table_thead_th">Ile</th>
-					<th class = "Table_thead_th_Action">Action</th>
+			<table class = "Tableau_CRUD">
+				<thead class = "Tableau_Entete">
+					<th class = "Tableau_TitreColonne">ID</th>
+					<th class = "Tableau_TitreColonne">Nom</th>
+					<th class = "Tableau_TitreColonne">Informations</th>
+					<th class = "Tableau_TitreColonne">Ile</th>
+					<th class = "Tableau_TitreColonne">Action</th>
 				</thead>
 				<tbody>
 					<?php
-						
-						include_once('Modele/bd.inc.php');
-
-						
-						foreach ($lieu as $row){
+						foreach ($Lieux as $row){
 							echo 
 							"<tr>
-								<td>".$row['id']."</td>
-								<td>".$row['nom']."</td>
-								<td>".$row['informations']."</td>
-								<td>".$row['ile']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['id']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['nom']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['informations']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['ile']."</td>
 								
-								<td>
+								<td class = 'Tableau_TexteColonne'>
 									<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Modifier</a>
 									<a href='#delete_".$row['id']."' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Supprimer</a>
 								</td>
@@ -61,15 +56,6 @@
 					?>
 				</tbody>
 			</table>
-
-
-
-
-
-
-
-
-
 		</div>
 
 <?php include('crudlieu/add_modal.php') ?>

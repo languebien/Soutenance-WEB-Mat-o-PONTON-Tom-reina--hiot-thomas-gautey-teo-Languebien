@@ -1,10 +1,9 @@
 <?php
-	
 	include_once('Modele/bd.inc.php');
 ?>
-	
 		<div class = "Pizza">
-			<h1 class = "Titre">CRUD Bateaux</h1>
+			<h1 class = "TitreInfo">CRUD Bateaux</h1>
+			<p class = "TexteInfo">Ajoutez, modifiez et supprimez des bateaux.</p>
 			<?php
 				if(isset($_SESSION['error'])){
 					echo
@@ -30,31 +29,30 @@
 
 			<a href="#addnew" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Ajouter</a>
 		
-			<table class = "Table" class="table table-bordered table-striped">
-				<thead>
-					<th class = "Table_thead_th">ID</th>
-					<th class = "Table_thead_th">Nom</th>
-					<th class = "Table_thead_th">Longueur</th>
-					<th class = "Table_thead_th">Largeur</th>
-					<th class = "Table_thead_th">Vitesse</th>
-					<th class = "Table_thead_th">Nb Passager</th>
-					<th class = "Table_thead_th">Nb Vehicule</th>
-					<th class = "Table_thead_th_Action">Action</th>
+			<table class = "Tableau_CRUD">
+				<thead class = "Tableau_Entete">
+					<th class = "Tableau_TitreColonne">ID</th>
+					<th class = "Tableau_TitreColonne">Nom</th>
+					<th class = "Tableau_TitreColonne">Longueur</th>
+					<th class = "Tableau_TitreColonne">Largeur</th>
+					<th class = "Tableau_TitreColonne">Vitesse</th>
+					<th class = "Tableau_TitreColonne">Nb Passager</th>
+					<th class = "Tableau_TitreColonne">Nb Vehicule</th>
+					<th class = "Tableau_TitreColonne">Action</th>
 				</thead>
 				<tbody>
 					<?php
-						
-						foreach ($bateaux as $row){
+						foreach ($Bateaux as $row){
 							echo 
 							"<tr>
-								<td>".$row['id']."</td>
-								<td>".$row['nom']."</td>
-								<td>".$row['longueur']."</td>
-								<td>".$row['largeur']."</td>
-								<td>".$row['vitesse']."</td>
-								<td>".$row['nbPassager']."</td>
-								<td>".$row['nbVehicule']."</td>
-								<td>
+								<td class = 'Tableau_TexteColonne'>".$row['id']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['nom']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['longueur']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['largeur']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['vitesse']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['nbPassager']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['nbVehicule']."</td>
+								<td class = 'Tableau_TexteColonne'>
 									<a href='#edit_".$row['id']."' class='btn btn-success btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-edit'></span> Modifier</a>
 									<a href='#delete_".$row['id']."' class='btn btn-danger btn-sm' data-toggle='modal'><span class='glyphicon glyphicon-trash'></span> Supprimer</a>
 								</td>

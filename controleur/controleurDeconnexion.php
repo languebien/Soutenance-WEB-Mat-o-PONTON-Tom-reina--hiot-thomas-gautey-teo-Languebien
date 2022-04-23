@@ -10,8 +10,6 @@ include "Modele/bd.authentification.inc.php" ;
 
 logout();
 
-                
-
 // appel du script de vue qui permet de gerer l'affichage des donnees
 $titre = "authentification";
 include("vue/entete.php");

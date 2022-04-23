@@ -1,6 +1,6 @@
 ﻿        <div class = "Pizza">
             <p class = "TitreInfo">Connexion</p>
-            <form method = "POST" action = "./?action=connexion">
+            <form id = "FormulaireConnexion" method = "POST" action = "./?action=connexion">
                 <div id = "Connexion">
 
                     <div class = "Connexion_Login">
