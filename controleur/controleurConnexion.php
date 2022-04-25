@@ -2,6 +2,8 @@
 
 include "Modele/bd.authentification.inc.php";
 
+$Ok = "";
+
 // Récupération des données du formulaire de connexion //
 if (isset($_POST["mailU"]) && isset($_POST["mdpU"])){
     $mailU=$_POST["mailU"];

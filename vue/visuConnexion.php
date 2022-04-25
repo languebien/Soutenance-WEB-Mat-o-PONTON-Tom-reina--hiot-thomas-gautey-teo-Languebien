@@ -46,6 +46,9 @@
 
                 </div>
             </form>
+            <div class = "ConfigInscr">
+                <p class = "ConfigText"><?php echo $Ok; ?></p>
+            </div>
         </div>
 
  

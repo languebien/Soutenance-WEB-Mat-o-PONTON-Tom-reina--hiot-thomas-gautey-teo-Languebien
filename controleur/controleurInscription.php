@@ -17,6 +17,8 @@ else {
 // I N S C R I P T I O N //
 addUtilisateur($mailU, $mdpU, $pseudoU);
 
+$Ok = "Compte Crée ! Vous pouvez maintenant vous connecter.";
+
 $titre = "authentification";
 include("vue/entete.php");
 include('vue/menu.php');

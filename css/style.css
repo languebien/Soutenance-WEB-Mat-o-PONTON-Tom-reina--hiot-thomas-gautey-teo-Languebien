@@ -352,6 +352,11 @@ div#Wrapper {
   justify-content: space-between;
   width: 330px;
 }
+.ConfigInscr {
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 30px;
+}
 
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/

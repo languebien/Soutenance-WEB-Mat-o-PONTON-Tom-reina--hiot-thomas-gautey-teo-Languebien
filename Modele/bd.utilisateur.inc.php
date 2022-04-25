@@ -69,8 +69,6 @@ function addUtilisateur($mailU, $mdpU, $pseudoU) {
         print "Erreur !: " . $e->getMessage();
         die();
     }
-    $Ok = "Compte Crée ! Vous pouvez maintenant vous connecter.";
-    return $Ok;
 }
 
 ?>
