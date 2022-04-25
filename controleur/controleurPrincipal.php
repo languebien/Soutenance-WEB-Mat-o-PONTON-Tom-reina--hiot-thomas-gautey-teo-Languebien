@@ -16,8 +16,9 @@ function controleurPrincipal($action) {
     // B A T E A U X //
     $lesActions["afficheBateaux"] = "controleurBateaux.php";
     
-    // C O N N E X I O N //
+    // C O N N E X I O N   &   I N S C R I P T I O N //
     $lesActions["connexion"] = "controleurConnexion.php";
+    $lesActions["inscription"] = "controleurInscription.php";
 
     // P A R T I E   C R U D //
     // D E C O N N E X I O N //

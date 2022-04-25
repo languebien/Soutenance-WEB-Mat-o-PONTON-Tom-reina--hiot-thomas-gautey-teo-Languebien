@@ -2,7 +2,7 @@
 
 include "Modele/bd.authentification.inc.php";
 
-// recuperation des donnees GET, POST, et SESSION
+// Récupération des données du formulaire de connexion //
 if (isset($_POST["mailU"]) && isset($_POST["mdpU"])){
     $mailU=$_POST["mailU"];
     $mdpU=$_POST["mdpU"];
@@ -13,7 +13,7 @@ else
     $mdpU="";
 }
 
-// traitement si necessaire des donnees recuperees
+// C O N N E X I O N //
 login($mailU,$mdpU);
 
 $Utilisateur = getUtilisateurByMailU($mailU);
