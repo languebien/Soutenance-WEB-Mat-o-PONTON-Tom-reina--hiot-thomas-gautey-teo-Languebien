@@ -17,6 +17,7 @@ else {
 // I N S C R I P T I O N //
 addUtilisateur($mailU, $mdpU, $pseudoU);
 
+// Message du succès de la création de compte //
 $Ok = "Compte Crée ! Vous pouvez maintenant vous connecter.";
 
 $titre = "authentification";

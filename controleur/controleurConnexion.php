@@ -2,6 +2,7 @@
 
 include "Modele/bd.authentification.inc.php";
 
+// Message du succès de la création de compte //
 $Ok = "";
 
 // Récupération des données du formulaire de connexion //
