@@ -1,11 +1,5 @@
 <?php
 
-/*
-
-Requetes et arguments d fonctions à modifier.
-
-*/
-
 include_once "bd.inc.php";
 
 function getUtilisateurs() {
@@ -43,13 +37,12 @@ function getUtilisateurByMailU($mailU) {
     return $resultat;
 }
 
-
-function getUtilisateursByPseudo($pseudo) {
+function getUtilisateursByPseudo($pseudoU) {
 
     try {
         $cnx = connexionPDO();
         $req = $cnx->prepare("SELECT * FROM utilisateur WHERE pseudo = :pseudo");
-        $req->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
+        $req->bindValue(':pseudo', $pseudoU, PDO::PARAM_STR);
         $req->execute();
 
         $resultat = $req->fetch(PDO::FETCH_ASSOC);
@@ -61,14 +54,14 @@ function getUtilisateursByPseudo($pseudo) {
     return $resultat;
 }
 
-function addUtilisateur($pseudo, $optionbts, $pizzapass) {
+function addUtilisateur($mailU, $mdpU, $pseudoU) {
     try {
         $cnx = connexionPDO();
 
-        $mdpUCrypt = crypt($pizzapass, "sel");
-        $req = $cnx->prepare("insert into utilisateur (pseudo, optionbts, pizzapass) values(:pseudo,:optionbts,:mdp)");
-        $req->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
-        $req->bindValue(':optionbts', $optionbts, PDO::PARAM_STR);
+        $mdpUCrypt = crypt($mdpU, "sel");
+        $req = $cnx->prepare("INSERT INTO utilisateur (mailU, mdpU, pseudoU) values(:mail, :mdp, :pseudo)");
+        $req->bindValue(':mail', $mailU, PDO::PARAM_STR);
+        $req->bindValue(':pseudo', $pseudoU, PDO::PARAM_STR);
         $req->bindValue(':mdp', $mdpUCrypt, PDO::PARAM_STR);
         
         $resultat = $req->execute();
@@ -76,7 +69,8 @@ function addUtilisateur($pseudo, $optionbts, $pizzapass) {
         print "Erreur !: " . $e->getMessage();
         die();
     }
-    return $resultat;
+    $Ok = "Compte Crée ! Vous pouvez maintenant vous connecter.";
+    return $Ok;
 }
 
 ?>

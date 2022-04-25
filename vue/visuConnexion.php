@@ -22,6 +22,30 @@
                         mot de passe : sio</p>
                 </div>
             </form>
+
+            <p class = "TitreInfo">Créer un compte</p>
+            <form id = "FormulaireInscription" method = "POST" action = "./?action=inscription">
+                <div id = "Inscription">
+
+                    <div class = "Inscription_Pseudo">
+                        <label class = "Texte" for = "">Pseudo :</label>
+                        <input class = "Input" name = "InscPseudo" type = "text" value = "" required>
+                    </div>
+
+                    <div class = "Inscription_Mail">
+                        <label class = "Texte" for = "">Email :</label>
+                        <input class = "Input" name = "InscMail" type = "text" value = "" required>
+                    </div>
+
+                    <div class = "Inscription_Pass">
+                        <label class = "Texte" for = "">Mot de Passe :</label>
+                        <input class = "Input" name = "InscMdp" type="password" required>
+                    </div>
+
+                    <input type = "submit" class = "Bouton" value = "Inscription" name = "Inscription">
+
+                </div>
+            </form>
         </div>
 
  
