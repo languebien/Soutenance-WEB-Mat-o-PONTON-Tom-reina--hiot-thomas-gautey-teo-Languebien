@@ -14,7 +14,7 @@
 		else{
 			$_SESSION["error"] = 'Problème lors de l\'ajout du Port';
 		}
-		header('location: index.php?action=modifiePort');
+		header('location: index.php?action=modifPort');
 	}
 	
 	if(isset($_POST['edit'])){
@@ -32,7 +32,7 @@
 		else{
 			$_SESSION['error'] = 'Problème lors de la modification du Port';
 		}
-		header('location: index.php?action=modifiePort');
+		header('location: index.php?action=modifPort');
 	}
 	
 	if(isset($_POST['supr'])){
@@ -47,6 +47,6 @@
 		else{
 			$_SESSION['error'] = 'Problème lors de la suppression du Port';
 		}
-		header('location: index.php?action=modifiePort');
+		header('location: index.php?action=modifPort');
 	}
 ?>

@@ -14,7 +14,7 @@
 		else{
 			$_SESSION["error"] = 'Problème lors de l\'ajout du Lieu';
 		}
-		header('location: index.php?action=modifieLieu');
+		header('location: index.php?action=modifLieu');
 	}
 	
 	if(isset($_POST['edit'])){
@@ -32,7 +32,7 @@
 		else{
 			$_SESSION['error'] = 'Problème lors de la modification du Lieu';
 		}
-		header('location: index.php?action=modifieLieu');
+		header('location: index.php?action=modifLieu');
 	}
 	
 	if(isset($_POST['supr'])){
@@ -47,6 +47,6 @@
 		else{
 			$_SESSION['error'] = 'Problème lors de la suppression du Lieu';
 		}
-		header('location: index.php?action=modifieLieu');
+		header('location: index.php?action=modifLieu');
 	}
 ?>

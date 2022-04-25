@@ -26,6 +26,10 @@ function controleurPrincipal($action) {
     $lesActions["modifLieu"] = "modifLieu.php";
     $lesActions["modifBateau"] = "modifBateau.php";
     $lesActions["modifPort"] = "modifPort.php";
+    $lesActions["modifCategorie"] = "modifCategorie.php";
+    $lesActions["modifTraverse"] = "modifTraverse.php";
+    $lesActions["modifLiaison"] = "modifLiaison.php";
+
     
     if (array_key_exists($action, $lesActions)) {
         return $lesActions[$action];
