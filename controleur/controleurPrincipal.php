@@ -24,12 +24,26 @@ function controleurPrincipal($action) {
     // D E C O N N E X I O N //
     $lesActions["deconnexion"] = "controleurDeconnexion.php";
 
+    // C R U D   L I E U //
     $lesActions["modifLieu"] = "modifLieu.php";
+
+    // C R U D   B A T E A U //
     $lesActions["modifBateau"] = "modifBateau.php";
+
+    // C R U D   P O R T //
     $lesActions["modifPort"] = "modifPort.php";
+
+    // C R U D   C A T E G O R I E //
     $lesActions["modifCategorie"] = "modifCategorie.php";
+
+    // C R U D   T R A V E R S E E //
     $lesActions["modifTraverse"] = "modifTraverse.php";
+
+    // C R U D   L I A I S O N //
     $lesActions["modifLiaison"] = "modifLiaison.php";
+
+    // C R U D   U T I L I S A T E U R S //
+    $lesActions["modifUtilisateurs"] = "modifUtilisateurs.php";
 
     
     if (array_key_exists($action, $lesActions)) {

@@ -52,6 +52,17 @@ function isLoggedOn() {
     return $ret;
 }
 
+function isAdmin() {
+    $Statut = getStatutByMail($_SESSION["mailU"]);
+
+    $AdminOrNot = false;
+
+    if ($Statut['statut'] == "administrateur") {
+        $AdminOrNot = true;
+    }
+    return $AdminOrNot;
+}
+
 if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     // prog principal de test
     header('Content-Type:text/plain');

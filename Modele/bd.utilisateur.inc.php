@@ -71,4 +71,19 @@ function addUtilisateur($mailU, $mdpU, $pseudoU) {
     }
 }
 
+function getStatutByMail($mailU){
+    try {
+        $cnx = connexionPDO();
+        $req = $cnx->prepare("SELECT statut FROM utilisateur WHERE mailU=:mailU");
+        $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
+        $req->execute();
+        
+        $Statut = $req->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        print "Erreur !: " . $e->getMessage();
+        die();
+    }
+    return $Statut;
+}
+
 ?>
