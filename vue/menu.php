@@ -13,7 +13,7 @@
 						echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifUtilisateurs">U T I L I S A T E U R S</a></li>';
 					}
 					else {
-						echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifUtilisateurs">Fuck</a></li>';
+						echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifUtilisateurs">U T I L I S A T E U R S</a></li>';
 					}
 					echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifBateau">B A T E A U X</a></li>';
 					echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifLieu">L I E U X</a></li>';
