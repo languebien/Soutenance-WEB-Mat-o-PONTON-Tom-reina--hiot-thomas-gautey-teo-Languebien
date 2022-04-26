@@ -1,6 +1,7 @@
 <?php 
 	include_once('Modele/bd.inc.php');
 	
+	
 	if(isset($_POST['edit'])){
 		$id = $_POST['id'];
 		$Statut = $_POST['statut'];	

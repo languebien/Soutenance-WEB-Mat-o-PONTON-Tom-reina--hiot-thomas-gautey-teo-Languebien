@@ -7,7 +7,7 @@
                 <center><h4 class="modal-title" id="myModalLabel">Modifier le Statut</h4></center>
             </div>
             <div class="modal-body">
-				<form method="POST" action="?action=modifUtilisateur">
+				<form method="POST" action="?action=modifUtilisateurs">
 					<div class="container-fluid">
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
