@@ -49,6 +49,16 @@ function getDates(){
     return $Dates;
 }
 
+// S E C T E U R //
+function getSecteur() {
+    include_once('Modele/bd.inc.php');
+    $connexion = connexionPDO();
+    $SQL = "SELECT * FROM secteur";
+    $stmt = $connexion->prepare($SQL);
+    $stmt->execute(array());
+    $Lieux = $stmt->fetchAll();
+    return $Lieux;
+}
 
 // L I E U X //
 function getLieux() {
