@@ -24,16 +24,6 @@ function getBateauxAvecSecteur($SecteurSelection) {
 }
 
 
-// S E C T E U R S //
-function getSecteur(){
-    include_once('Modele/bd.inc.php');
-    $connexion = connexionPDO();
-    $SQL = "SELECT * FROM secteur;";
-    $stmt = $connexion->prepare($SQL);
-    $stmt->execute(array());
-    $Secteur = $stmt->fetchAll();
-    return $Secteur;
-}
 
 
 // L I A I S O N S //
