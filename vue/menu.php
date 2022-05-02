@@ -20,7 +20,6 @@
 					echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifPort">P O R T S</a></li>';
 					echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifLiaison">L I A S O N</a></li>';
 					echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifTraverse">T R A V E R S E</a></li>';
-					echo '<li><a class = "NavBar_Pages_Link" href="index.php?action=modifCategorie">C A T E G O R I E</a></li>';
 					echo '<li><a class = "NavBar_Admin_Link" href="index.php?action=deconnexion">D E C O N N E X I O N</a></li>';
 				}
 				else {

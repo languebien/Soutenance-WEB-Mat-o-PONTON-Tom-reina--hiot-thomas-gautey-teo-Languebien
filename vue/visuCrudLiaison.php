@@ -36,6 +36,7 @@
 					<th class = "Tableau_TitreColonne">PortArrivee</th>
 					<th class = "Tableau_TitreColonne">Secteur</th>
 					<th class = "Tableau_TitreColonne">Distance en Milles</th>
+                    <th class = "Tableau_TitreColonne">Action</th>
 					
 				</thead>
 				<tbody>

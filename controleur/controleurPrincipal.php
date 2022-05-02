@@ -33,8 +33,7 @@ function controleurPrincipal($action) {
     // C R U D   P O R T //
     $lesActions["modifPort"] = "modifPort.php";
 
-    // C R U D   C A T E G O R I E //
-    $lesActions["modifCategorie"] = "modifCategorie.php";
+    
 
     // C R U D   T R A V E R S E E //
     $lesActions["modifTraverse"] = "modifTraverse.php";
