@@ -40,7 +40,7 @@ function getSecteur(){
 function getLiaison(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
-    $SQL = "SELECT port.nom AS 'NomPortDepart', port.nom AS 'NomPortArrivee', secteur.libelle AS 'secteur' FROM liaison INNER JOIN port ON liaison.idPortDepart = port.id INNER JOIN secteur ON liaison.idSecteur = secteur.id";
+    $SQL = "SELECT liaison.id, port.nom AS 'NomPortDepart', port.nom AS 'NomPortArrivee', secteur.libelle AS 'secteur',liaison.dMilles FROM liaison INNER JOIN port ON liaison.idPortDepart = port.id INNER JOIN secteur ON liaison.idSecteur = secteur.id";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array());
     $Liaison = $stmt->fetchAll();
