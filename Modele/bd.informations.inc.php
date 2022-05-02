@@ -98,7 +98,7 @@ function getPortsAvecSecteur($SecteurSelection) {
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
     $SQL = "SELECT port.id, port.nom AS 'nomPort', port.adresse, port.codePostal, port.ville, lieu.nom AS 'nomLieu' FROM port INNER JOIN lieu ON port.idLieu = lieu.id INNER JOIN liaison ON port.id = liaison.idPortDepart INNER JOIN secteur ON liaison.idSecteur = secteur.id WHERE secteur.libelle = ?;";
-    $stmt = $connexion->prepare($S , QL);
+    $stmt = $connexion->prepare($SQL);
     $stmt->execute(array($SecteurSelection));
     $Ports = $stmt->fetchAll();
     return $Ports;
