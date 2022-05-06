@@ -1,6 +1,6 @@
 ﻿        <!-- A C C E U I L  -->
         <div class = "Acceuil">
-            <p class = "TitreAcceuil">Océane</p>
+            <p class = "TitreAcceuil">OCEANE</p>
 
             <div class = "Description">
                 <p class = "TitreDescription"><strong>Tout commence avec un voyage</strong></p>

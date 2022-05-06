@@ -1,9 +1,9 @@
         <footer class = "Footer">
             <div class = "Footer_Creators">
-                <p class="Footer_Creators_Text">Téo LANGUEBIEN</p>
-                <p class="Footer_Creators_Text">Mateo PONTON</p>
-                <p class="Footer_Creators_Text">Thomas GAUTHEY</p>
-                <p class="Footer_Creators_Text">Tom REINA--HIOT</p>
+                <p class="Footer_Creators_Text">TEO LANGUEBIEN</p>
+                <p class="Footer_Creators_Text">MATEO PONTON</p>
+                <p class="Footer_Creators_Text">THOMAS GAUTHEY</p>
+                <p class="Footer_Creators_Text">TOM REINA--HIOT</p>
             </div>
         </footer>
     </div> <!-- End Wrapper -->

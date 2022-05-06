@@ -25,6 +25,11 @@ div#Wrapper {
 	font-family: "AlphaMonday";
 	src: url('../polices/AlphaMonday.otf');
 }
+@font-face {
+	font-family: "Racoon";
+	src: url('../polices/Platinum.ttf');
+}
+
 
 /* Barre de Navigation */
 .NavBar {
@@ -81,14 +86,14 @@ div#Wrapper {
   align-items: center;
   justify-content: flex-start;
   width: 800px;
-  height: 260px;
+  height: 370px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .TitreAcceuil {
   text-align: center;
-  font-family: Arial;
+  font-family: Racoon;
   color: black;
   font-size: 50px;
   width: 100%;
@@ -98,7 +103,9 @@ div#Wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  height: 250px;
+
 }
 .TitreDescription {
   text-align: center;
@@ -364,7 +371,7 @@ div#Wrapper {
 
 .Footer {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 115px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -382,7 +389,7 @@ div#Wrapper {
 
 .Footer_Creators_Text {
   text-align: center;
-  font-family: Arial;
+  font-family: Racoon;
   color: rgb(0, 0, 0);
   font-size: 14px;
   margin-left: 20px;
