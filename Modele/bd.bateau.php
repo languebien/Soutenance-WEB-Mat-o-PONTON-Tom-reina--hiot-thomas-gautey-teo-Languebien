@@ -39,7 +39,7 @@ function addBateau($nom, $longueur, $largeur, $vitesse, $nbP, $nbV) {
 }
 
 
-function editBateau($nom, $longueur, $largeur, $vitesse, $nbP, $nbV) {
+function editBateau($id, $nom, $longueur, $largeur, $vitesse, $nbP, $nbV) {
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();	
     $req = $connexion->prepare('UPDATE bateau SET nom = :nom, longueur = :longueur, largeur = :largeur, vitesse = :vitesse, nbPassager = :nbP, nbVehicule = :nbV WHERE id = :id');

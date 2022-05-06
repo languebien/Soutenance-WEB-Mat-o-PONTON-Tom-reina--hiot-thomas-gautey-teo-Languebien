@@ -24,6 +24,7 @@ if(isset($_POST['add'])){
     header('location: index.php?action=modifBateau');
 }
 if(isset($_POST['edit'])){
+    $id = $_POST['id'];
     $nom = $_POST['nom'];
     $longueur = $_POST['longueur'];
     $largeur = $_POST['largeur'];
@@ -32,7 +33,7 @@ if(isset($_POST['edit'])){
     $nbV = $_POST['nbV'];
 
 
-    $resultat = editBateau($nom, $longueur, $largeur, $vitesse, $nbP, $nbV);
+    $resultat = editBateau($id,$nom, $longueur, $largeur, $vitesse, $nbP, $nbV);
     if($resultat){
         $_SESSION["success"] = 'Bateau ajouté';
     }

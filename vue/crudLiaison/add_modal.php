@@ -15,10 +15,10 @@
 				<div class="row form-group">
 					<div class="col-sm-2">
 
-						<label class="control-label modal-label">numBDepart:</label></br></br>
-                        <label class="control-label modal-label">numBArrivee:</label></br>
+						<label class="control-label modal-label">numBDepart:</label>
+                        <label class="control-label modal-label">numBArrivee:</label>
 
-                        <label class="control-label modal-label">idSecteur:</label></br></br>
+                        <label class="control-label modal-label">idSecteur:</label>
                         <label class="control-label modal-label">Milles:</label>
 					</div>
 					<div class="col-sm-10">
