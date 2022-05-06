@@ -30,10 +30,20 @@
 	if(isset($_POST['edit'])){
 		$id = $_POST['id'];
 		$nom = $_POST['nom'];	
+		$longueur = $_POST['longueur'];
+		$largeur = $_POST['largeur'];
+		$vitesse = $_POST['vitesse'];
+		$nbP = $_POST['nbP'];
+		$nbV = $_POST['nbV'];
 		$connexion = connexionPDO();	
-		$req = $connexion->prepare('UPDATE bateau SET nom = :nom WHERE id = :id');
+		$req = $connexion->prepare('UPDATE bateau SET nom = :nom, longueur = :longueur, largeur = :largeur, vitesse = :vitesse, nbPassager = :nbP, nbVehicule = :nbV WHERE id = :id');
 		$req->bindParam(':nom', $nom, PDO::PARAM_STR);
 		$req->bindParam(':id', $id, PDO::PARAM_INT);
+		$req->bindParam(':longueur', $longueur, PDO::PARAM_INT);
+		$req->bindParam(':largeur', $largeur, PDO::PARAM_INT);
+		$req->bindParam(':vitesse', $vitesse, PDO::PARAM_INT);
+		$req->bindParam(':nbP', $nbP, PDO::PARAM_INT);
+		$req->bindParam(':nbV', $nbV, PDO::PARAM_INT);
 		$resultat = $req->execute();
 
 		if($resultat){

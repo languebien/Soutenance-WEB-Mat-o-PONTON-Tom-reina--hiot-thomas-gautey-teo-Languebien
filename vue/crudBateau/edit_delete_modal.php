@@ -13,9 +13,20 @@
 						<div class="row form-group">
 							<div class="col-sm-2">
 								<label class="control-label modal-label">Nom:</label>
+								<label class="control-label modal-label">Longueur:</label>
+								<label class="control-label modal-label">Largeur:</label>
+								<label class="control-label modal-label">Vitesse:</label>
+								<label class="control-label modal-label">nbP:</label>
+								<label class="control-label modal-label">nbV:</label>
+
 							</div>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" name="nom" value="<?php echo $row['nom']; ?>">
+								<input type="text" class="form-control" name="longueur" value="<?php echo $row['longueur']; ?>">
+								<input type="text" class="form-control" name="largeur" value="<?php echo $row['largeur']; ?>">
+								<input type="text" class="form-control" name="vitesse" value="<?php echo $row['vitesse']; ?>">
+								<input type="text" class="form-control" name="nbP" value="<?php echo $row['nbPassager']; ?>">
+								<input type="text" class="form-control" name="nbV" value="<?php echo $row['nbVehicule']; ?>">
 							</div>
 						</div>
 					</div> 
