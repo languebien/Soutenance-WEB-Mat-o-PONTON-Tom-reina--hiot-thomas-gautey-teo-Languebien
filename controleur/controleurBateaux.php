@@ -1,6 +1,7 @@
 <?php
 
 include ("Modele/bd.bateau.php");
+include ("Modele/bd.secteur.php");
 include ("Modele/bd.authentification.inc.php");
 
 $Bateaux = getBateaux();

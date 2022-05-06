@@ -11,12 +11,9 @@
 					<div class="container-fluid">
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
-							<div class="col-sm-2">
-								<label class="control-label modal-label">Nom:</label>
-								<label class="control-label modal-label">Informations:</label>
-								<label class="control-label modal-label">ile:</label>
-							</div>
+
 							<div class="col-sm-10">
+								<label class="control-label modal-label">Nom :</label>
 								<input type="text" class="form-control" name="nom" value="<?php echo $row['nom']; ?>">
 								<input type="text" class="form-control" name="info" value="<?php echo $row['informations']; ?>">
 								<input type="text" class="form-control" name="ile" value="<?php echo $row['ile']; ?>">

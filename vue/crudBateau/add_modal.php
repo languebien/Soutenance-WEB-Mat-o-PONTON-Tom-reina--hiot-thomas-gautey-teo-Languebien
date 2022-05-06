@@ -10,21 +10,23 @@
 			<div class="container-fluid">
 			<form method="POST" action="?action=modifBateau">
 				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label modal-label">Nom:</label>
-                        <label class="control-label modal-label">Longueur:</label>
-                        <label class="control-label modal-label">Largeur:</label>
-                        <label class="control-label modal-label">vitesse:</label>
-                        <label class="control-label modal-label">nbP:</label>
-                        <label class="control-label modal-label">nbV:</label>
-
-					</div>
 					<div class="col-sm-10">
+                        <label class="control-label modal-label">Nom :</label>
 						<input type="text" class="form-control" name="nom" required>
+
+                        <label class="control-label modal-label">Longueur :</label>
                         <input type="text" class="form-control" name="longueur" required>
+
+                        <label class="control-label modal-label">Largeur :</label>
                         <input type="text" class="form-control" name="largeur" required>
+
+                        <label class="control-label modal-label">Vitesse :</label>
                         <input type="text" class="form-control" name="vitesse" required>
+
+                        <label class="control-label modal-label">Places Disponibles :</label>
                         <input type="text" class="form-control" name="nbP" required>
+
+                        <label class="control-label modal-label">Emplacements de Véhicules :</label>
                         <input type="text" class="form-control" name="nbV" required>
 					</div>
 				</div>

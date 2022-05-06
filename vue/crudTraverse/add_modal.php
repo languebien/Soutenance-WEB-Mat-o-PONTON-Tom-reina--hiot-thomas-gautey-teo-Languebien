@@ -10,15 +10,11 @@
 			<div class="container-fluid">
 			<form method="POST" action="?action=modifTraverse">
 				<div class="row form-group">
-					<div class="col-sm-2">
-
-						<label class="control-label modal-label">Numéro:</label>
-                        <label class="control-label modal-label">Bateau:</label>
-                        <label class="control-label modal-label">Liaison:</label>
-					</div>
 					<div class="col-sm-10">
-						
+                        <label class="control-label modal-label">ID Bateau :</label>
                         <input type="text" class="form-control" name="idBateau" required>
+
+                        <label class="control-label modal-label">ID Liaison :</label>
                         <input type="text" class="form-control" name="idLiaison" required>
 
 					</div>

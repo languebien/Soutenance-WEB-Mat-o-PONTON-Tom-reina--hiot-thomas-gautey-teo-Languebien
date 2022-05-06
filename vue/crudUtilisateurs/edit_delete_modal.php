@@ -11,10 +11,8 @@
 					<div class="container-fluid">
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
-							<div class="col-sm-2">
-								<label class="control-label modal-label">Statut:</label>
-							</div>
 							<div class="col-sm-10">
+								<label class="control-label modal-label">Statut:</label>
 								<select class="form-control" name="statut">
 									<option value="Administrateur">Administrateur</option>
 									<option value="Utilisateur">Utilisateur</option>

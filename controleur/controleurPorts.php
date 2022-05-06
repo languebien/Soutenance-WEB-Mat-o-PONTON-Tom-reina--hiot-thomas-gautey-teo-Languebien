@@ -1,6 +1,7 @@
 <?php
 
 include ("Modele/bd.port.php");
+include ("Modele/bd.secteur.php");
 include ("Modele/bd.authentification.inc.php");
 
 $Ports = getPortsAmeliore();
