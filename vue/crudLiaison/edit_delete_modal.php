@@ -42,7 +42,7 @@
 			</div>
             <div class="modal-footer">
 				<form method="POST" action="?action=modifLiaison">
-					<input type="hidden" class="form-control" name="numero" value="<?php echo $row['id']; ?>">
+					<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 					<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Annuler</button>
 					<button type="submit" name="supr" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Oui</a>
 				</form>

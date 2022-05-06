@@ -13,7 +13,6 @@
         $req->bindParam(':bateau2', $idB2, PDO::PARAM_STR);
         $req->bindParam(':secteur', $idS, PDO::PARAM_STR);
         $req->bindParam(':milles', $idM, PDO::PARAM_STR);
-        
 		$resultat = $req->execute();
 		if($resultat){
 			$_SESSION["success"] = 'liaison ajouté';
