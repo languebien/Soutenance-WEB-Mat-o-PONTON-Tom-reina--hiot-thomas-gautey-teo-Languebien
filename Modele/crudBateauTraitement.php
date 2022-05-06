@@ -4,14 +4,19 @@
 
 	if(isset($_POST['add'])){
 		$nom = $_POST['nom'];
+		$longueur = $_POST['longueur'];
+		$largeur = $_POST['largeur'];
+		$vitesse = $_POST['vitesse'];
+		$nbP = $_POST['nbP'];
+		$nbV = $_POST['nbV'];
 		$connexion = connexionPDO();
-		$req = $connexion->prepare('INSERT INTO bateau (nom, longueur, largueur, vitesse, nbPassager, nbVehicule) VALUES (:nom, :longueur, :largueur, :vitesse, :nbPassager, :nbVehicule)');
+		$req = $connexion->prepare('INSERT INTO bateau (nom, longueur, largeur, vitesse, nbPassager, nbVehicule) VALUES (:nom, :longueur, :largeur, :vitesse, :nbP, :nbV)');
 		$req->bindParam(':nom', $nom, PDO::PARAM_STR);
-		$req->bindParam(':longueur', $nom, PDO::PARAM_INT);
-		$req->bindParam(':largueur', $nom, PDO::PARAM_INT);
-		$req->bindParam(':vitesse', $nom, PDO::PARAM_INT);
-		$req->bindParam(':nbPassager', $nom, PDO::PARAM_INT);
-		$req->bindParam(':nbVehicule', $nom, PDO::PARAM_INT);
+		$req->bindParam(':longueur', $longueur, PDO::PARAM_INT);
+		$req->bindParam(':largeur', $largeur, PDO::PARAM_INT);
+		$req->bindParam(':vitesse', $vitesse, PDO::PARAM_INT);
+		$req->bindParam(':nbP', $nbP, PDO::PARAM_INT);
+		$req->bindParam(':nbV', $nbV, PDO::PARAM_INT);
 		$resultat = $req->execute();
 		if($resultat){
 			$_SESSION["success"] = 'Bateau ajouté';

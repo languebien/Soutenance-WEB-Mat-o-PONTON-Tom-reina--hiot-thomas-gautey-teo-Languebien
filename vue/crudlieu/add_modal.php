@@ -11,7 +11,7 @@
 			<form method="POST" action="?action=modifLieu">
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label modal-label">Nom:</label>
+						<label class="control-label modal-label">Nom:</label> </br> </br>
                         <label class="control-label modal-label">Informations:</label>
                         <label class="control-label modal-label">Ile:</label>
 					</div>
