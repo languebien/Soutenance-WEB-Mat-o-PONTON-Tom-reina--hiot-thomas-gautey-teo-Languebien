@@ -11,6 +11,11 @@ if(isset($_POST["FiltreSecteurs"])) {
 
     $Ports = getPortsAvecSecteur($SecteurSelection);
 }
+if (isset($_POST["FiltreSecteurs"])){
+    if ($_POST["FiltreSecteurs"] == "" or $_POST["FiltreSecteurs"] == "Tous les Secteurs" ){
+        $Ports = getPortsAmeliore();
+     }
+}
 
 include("vue/entete.php");
 include('vue/menu.php');

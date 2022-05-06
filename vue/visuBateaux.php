@@ -15,7 +15,7 @@
 							echo '<option value="'.$row['libelle'].'" '.$Selected.'>'.$row['libelle'].'</option>';
 						}
 					?>
-					<option value="">Tous les Secteurs</option>
+					<option>Tous les Secteurs</option>
 				</select>
 
 				<input name = "AppliqueFiltreBateaux" value = "Filtrer par Secteur" class = "FiltreBateauxBouton" type = "submit">
