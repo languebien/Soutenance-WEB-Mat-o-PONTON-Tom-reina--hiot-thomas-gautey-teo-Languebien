@@ -11,10 +11,18 @@
 			<form method="POST" action="?action=modifPort">
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label modal-label">Nom:</label>
+						<label class="control-label modal-label">Nom:</label> </br></br>
+                        <label class="control-label modal-label">adresse:</label>
+                        <label class="control-label modal-label">codePostal:</label></br></br>
+                        <label class="control-label modal-label">ville:</label> 
+                        <label class="control-label modal-label">lieu:</label>
 					</div>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" name="nom" required>
+                        <input type="text" class="form-control" name="adresse" required>
+                        <input type="text" class="form-control" name="codePostal" required>
+                        <input type="text" class="form-control" name="ville" required>
+                        <input type="text" class="form-control" name="lieu" required>
 					</div>
 				</div>
             </div> 
