@@ -4,15 +4,20 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <center><h4 class="modal-title" id="myModalLabel">Ajouter une Liaison</h4></center>
+
+                <center><h4 class="modal-title" id="myModalLabel">Ajouter une nouvelle liaison</h4></center>
+               
+
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
 			<form method="POST" action="?action=modifLiaison">
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label modal-label">idPortDepart:</label></br></br>
-                        <label class="control-label modal-label">idPortArrivee:</label></br>
+
+						<label class="control-label modal-label">numBDepart:</label></br></br>
+                        <label class="control-label modal-label">numBArrivee:</label></br>
+
                         <label class="control-label modal-label">idSecteur:</label></br></br>
                         <label class="control-label modal-label">Milles:</label>
 					</div>

@@ -11,12 +11,13 @@
 			<form method="POST" action="?action=modifTraverse">
 				<div class="row form-group">
 					<div class="col-sm-2">
+
 						<label class="control-label modal-label">Numéro:</label>
                         <label class="control-label modal-label">Bateau:</label>
                         <label class="control-label modal-label">Liaison:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="numero" required>
+						
                         <input type="text" class="form-control" name="idBateau" required>
                         <input type="text" class="form-control" name="idLiaison" required>
 
