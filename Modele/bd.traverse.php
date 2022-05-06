@@ -19,10 +19,11 @@ function addTraverse($idB,$idL){
     return $resultat;
 }
 
-function editTraverse($numero,$idBateau){
+function editTraverse($numero,$idBateau,$idLiaison){
     $connexion = connexionPDO();	
-    $req = $connexion->prepare('UPDATE  traverse SET idbateau = :idbateau WHERE numero = :numero');
-    $req->bindParam(':idbateau', $idBateau, PDO::PARAM_STR);
+    $req = $connexion->prepare('UPDATE  traverse SET idBateau = :idBateau, idLiaison = :idLiaison WHERE numero = :numero');
+    $req->bindParam(':idBateau', $idBateau, PDO::PARAM_STR);
+    $req->bindParam(':idLiaison', $idLiaison, PDO::PARAM_STR);
     $req->bindParam(':numero', $numero, PDO::PARAM_INT);
     $resultat = $req->execute();
     return $resultat;

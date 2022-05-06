@@ -22,8 +22,10 @@ if(isset($_POST['add'])){
 if(isset($_POST['edit'])){
     $numero = $_POST['numero'];
     $idBateau = $_POST['idbateau'];	
+    $idLiaison = $_POST['idLiaison'];
     
-    $resultat = editTraverse($numero,$idBateau);
+    
+    $resultat = editTraverse($numero,$idBateau,$idLiaison);
     if($resultat){
         $_SESSION['success'] = 'traverse modifié';
     }		

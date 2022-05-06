@@ -14,6 +14,9 @@
 							<div class="col-sm-10">
 								<label class="control-label modal-label">ID Bateau :</label>
 								<input type="text" class="form-control" name="idbateau" value="<?php echo $row['idBateau']; ?>">
+								<label class="control-label modal-label">ID liaison :</label>
+								<input type="text" class="form-control" name="idLiaison" value="<?php echo $row['idLiaison']; ?>">
+								
 							</div>
 						</div>
 					</div> 

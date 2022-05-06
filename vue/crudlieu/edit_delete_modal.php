@@ -15,7 +15,9 @@
 							<div class="col-sm-10">
 								<label class="control-label modal-label">Nom :</label>
 								<input type="text" class="form-control" name="nom" value="<?php echo $row['nom']; ?>">
+								<label class="control-label modal-label">Informations :</label>
 								<input type="text" class="form-control" name="info" value="<?php echo $row['informations']; ?>">
+								<label class="control-label modal-label">Ile :</label>
 								<input type="text" class="form-control" name="ile" value="<?php echo $row['ile']; ?>">
 							</div>
 						</div>
