@@ -11,10 +11,8 @@
 					<div class="container-fluid">
 						<input type="hidden" class="form-control" name="numero" value="<?php echo $row['numero']; ?>">
 						<div class="row form-group">
-							<div class="col-sm-2">
-								<label class="control-label modal-label">identifiant du bateau:</label>
-							</div>
 							<div class="col-sm-10">
+								<label class="control-label modal-label">ID Bateau :</label>
 								<input type="text" class="form-control" name="idbateau" value="<?php echo $row['idBateau']; ?>">
 							</div>
 						</div>

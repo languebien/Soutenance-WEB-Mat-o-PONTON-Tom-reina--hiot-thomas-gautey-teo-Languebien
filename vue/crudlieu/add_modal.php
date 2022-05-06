@@ -10,15 +10,18 @@
 			<div class="container-fluid">
 			<form method="POST" action="?action=modifLieu">
 				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label modal-label">Nom:</label> 
-                        <label class="control-label modal-label">Informations:</label>
-                        <label class="control-label modal-label">Ile:</label>
-					</div>
 					<div class="col-sm-10">
+                        <label class="control-label modal-label">Nom :</label> 
 						<input type="text" class="form-control" name="nom" required>
+
+                        <label class="control-label modal-label">Informations :</label>
                         <input type="text" class="form-control" name="info" required>
-                        <input type="text" class="form-control" name="ile" required>
+
+                        <label class="control-label modal-label">Ile :</label>
+                        <select class="form-control" name="ile" required>*
+                            <option value="0">Non</option>
+                            <option value="1">Oui</option>
+                        </select>
 					</div>
 				</div>
             </div> 

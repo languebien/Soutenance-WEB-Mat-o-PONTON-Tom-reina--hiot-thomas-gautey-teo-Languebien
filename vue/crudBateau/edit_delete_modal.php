@@ -11,21 +11,23 @@
 					<div class="container-fluid">
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
-							<div class="col-sm-2">
-								<label class="control-label modal-label">Nom:</label>
-								<label class="control-label modal-label">Longueur:</label>
-								<label class="control-label modal-label">Largeur:</label>
-								<label class="control-label modal-label">Vitesse:</label>
-								<label class="control-label modal-label">nbP:</label>
-								<label class="control-label modal-label">nbV:</label>
-
-							</div>
 							<div class="col-sm-10">
+								<label class="control-label modal-label">Nom :</label>
 								<input type="text" class="form-control" name="nom" value="<?php echo $row['nom']; ?>">
+
+								<label class="control-label modal-label">Longueur :</label>
 								<input type="text" class="form-control" name="longueur" value="<?php echo $row['longueur']; ?>">
+
+								<label class="control-label modal-label">Largeur :</label>
 								<input type="text" class="form-control" name="largeur" value="<?php echo $row['largeur']; ?>">
+
+								<label class="control-label modal-label">Vitesse :</label>
 								<input type="text" class="form-control" name="vitesse" value="<?php echo $row['vitesse']; ?>">
+
+								<label class="control-label modal-label">Places Disponibles :</label>
 								<input type="text" class="form-control" name="nbP" value="<?php echo $row['nbPassager']; ?>">
+
+								<label class="control-label modal-label">Emplacements de Véhicules :</label>
 								<input type="text" class="form-control" name="nbV" value="<?php echo $row['nbVehicule']; ?>">
 							</div>
 						</div>
