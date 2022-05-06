@@ -4,25 +4,27 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <center><h4 class="modal-title" id="myModalLabel">Modifier port</h4></center>
+                <center><h4 class="modal-title" id="myModalLabel">Modifier le port</h4></center>
             </div>
             <div class="modal-body">
 				<form method="POST" action="?action=modifPort">
 					<div class="container-fluid">
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
-							<div class="col-sm-2">
-								<label class="control-label modal-label">Nom:</label>
-								<label class="control-label modal-label">Adresse:</label>
-								<label class="control-label modal-label">CodePostal:</label>
-								<label class="control-label modal-label">Ville:</label>
-								<label class="control-label modal-label">Lieu:</label>
-							</div>
 							<div class="col-sm-10">
+								<label class="control-label modal-label">Nom :</label>
 								<input type="text" class="form-control" name="nom" value="<?php echo $row['nom']; ?>">
+
+								<label class="control-label modal-label">Adresse :</label>
 								<input type="text" class="form-control" name="adresse" value="<?php echo $row['adresse']; ?>">
+								
+								<label class="control-label modal-label">Code Postal :</label>
 								<input type="text" class="form-control" name="codeP" value="<?php echo $row['codePostal']; ?>">
+								
+								<label class="control-label modal-label">Ville :</label>
 								<input type="text" class="form-control" name="ville" value="<?php echo $row['ville']; ?>">
+								
+								<label class="control-label modal-label">Lieu :</label>
 								<input type="text" class="form-control" name="idL" value="<?php echo $row['idLieu']; ?>">
 							</div>
 						</div>

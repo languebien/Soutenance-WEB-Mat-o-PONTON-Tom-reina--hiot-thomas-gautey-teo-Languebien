@@ -10,18 +10,20 @@
 			<div class="container-fluid">
 			<form method="POST" action="?action=modifPort">
 				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label modal-label">Nom:</label>
-                        <label class="control-label modal-label">adresse:</label>
-                        <label class="control-label modal-label">codePostal:</label>
-                        <label class="control-label modal-label">ville:</label> 
-                        <label class="control-label modal-label">lieu:</label>
-					</div>
 					<div class="col-sm-10">
+                        <label class="control-label modal-label">Nom :</label>
 						<input type="text" class="form-control" name="nom" required>
+
+                        <label class="control-label modal-label">Adresse :</label>
                         <input type="text" class="form-control" name="adresse" required>
+
+                        <label class="control-label modal-label">Code Postal :</label>
                         <input type="text" class="form-control" name="codePostal" required>
+
+                        <label class="control-label modal-label">Ville :</label>
                         <input type="text" class="form-control" name="ville" required>
+
+                        <label class="control-label modal-label">Lieu :</label>
                         <input type="text" class="form-control" name="lieu" required>
 					</div>
 				</div>
