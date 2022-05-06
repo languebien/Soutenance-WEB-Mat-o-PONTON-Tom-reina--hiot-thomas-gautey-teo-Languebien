@@ -4,9 +4,17 @@
 
 	if(isset($_POST['add'])){
 		$nom = $_POST['nom'];
+		$adresse = $_POST['adresse'];
+		$code = $_POST['codePostal'];
+		$ville = $_POST['ville'];
+		$lieu = $_POST['lieu'];
 		$connexion = connexionPDO();
-		$req = $connexion->prepare('INSERT INTO Port (nom) VALUES (:nom)');
+		$req = $connexion->prepare('INSERT INTO Port (nom, adresse, codePostal, ville, idLieu) VALUES (:nom, :adresse, :codePostal, :ville, :lieu)');
 		$req->bindParam(':nom', $nom, PDO::PARAM_STR);
+		$req->bindParam(':adresse', $adresse, PDO::PARAM_STR);
+		$req->bindParam(':codePostal', $code, PDO::PARAM_STR);
+		$req->bindParam(':ville', $ville, PDO::PARAM_STR);
+		$req->bindParam(':lieu', $lieu, PDO::PARAM_STR);
 		$resultat = $req->execute();
 		if($resultat){
 			$_SESSION["success"] = 'Port ajouté';

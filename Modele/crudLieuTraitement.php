@@ -4,9 +4,13 @@
 
 	if(isset($_POST['add'])){
 		$nom = $_POST['nom'];
+		$info = $_POST['info'];
+		$ile = $_POST['ile'];
 		$connexion = connexionPDO();
-		$req = $connexion->prepare('INSERT INTO lieu (nom) VALUES (:nom)');
+		$req = $connexion->prepare('INSERT INTO lieu (nom, informations, ile ) VALUES (:nom, :info, :ile)');
 		$req->bindParam(':nom', $nom, PDO::PARAM_STR);
+		$req->bindParam(':info', $info, PDO::PARAM_STR);
+		$req->bindParam(':ile', $ile, PDO::PARAM_STR);
 		$resultat = $req->execute();
 		if($resultat){
 			$_SESSION["success"] = 'Lieu ajouté';
