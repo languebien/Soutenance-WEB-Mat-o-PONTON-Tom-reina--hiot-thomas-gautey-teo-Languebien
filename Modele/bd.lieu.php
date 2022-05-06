@@ -21,11 +21,13 @@ function addLieux($nom,$info,$ile) {
     return $resultat;
 }
 
-function editLieux($nom,$id){
+function editLieux($nom,$id,$info, $ile){
     $connexion = connexionPDO();	
-    $req = $connexion->prepare('UPDATE lieu SET nom = :nom WHERE id = :id');
+    $req = $connexion->prepare('UPDATE lieu SET nom = :nom, informations = :info, ile = :ile WHERE id = :id');
     $req->bindParam(':nom', $nom, PDO::PARAM_STR);
+    $req->bindParam(':info', $info, PDO::PARAM_STR);
     $req->bindParam(':id', $id, PDO::PARAM_INT);
+    $req->bindParam(':ile', $ile, PDO::PARAM_INT);
     $resultat = $req->execute();
     return $resultat;
 }

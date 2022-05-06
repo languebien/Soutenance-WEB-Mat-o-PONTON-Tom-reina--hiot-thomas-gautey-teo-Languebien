@@ -24,9 +24,13 @@ if(isset($_POST['add'])){
 
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
-    $nom = $_POST['nom'];	
+    $nom = $_POST['nom'];
+    $adresse = $_POST['adresse'];
+    $codeP = $_POST['codeP'];
+    $ville = $_POST['ville'];
+    $idL = $_POST['idL'];	
     
-    $resultat = editPort($id,$nom);
+    $resultat = editPort($id,$nom,$adresse,$codeP,$ville,$idL);
     if($resultat){
         $_SESSION['success'] = 'Port modifié';
     }		

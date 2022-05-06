@@ -3,7 +3,7 @@
 function getPorts (){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
-    $SQL = "SELECT * FROM port;";
+    $SQL = "SELECT * FROM port ;";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array());
     $Ports = $stmt->fetchAll();
@@ -42,11 +42,15 @@ function addPort($nom,$adresse,$code,$ville,$lieu){
     return $resultat;
 }
 
-function editPort($id,$nom){
+function editPort($id,$nom,$adresse,$codeP,$ville,$idL){
     $connexion = connexionPDO();	
-    $req = $connexion->prepare('UPDATE Port SET nom = :nom WHERE id = :id');
+    $req = $connexion->prepare('UPDATE Port SET nom = :nom, adresse = :adresse, codePostal = :codeP, ville = :ville, idLieu = :idL  WHERE id = :id');
     $req->bindParam(':nom', $nom, PDO::PARAM_STR);
+    $req->bindParam(':ville', $ville, PDO::PARAM_STR);
     $req->bindParam(':id', $id, PDO::PARAM_INT);
+    $req->bindParam(':adresse', $adresse, PDO::PARAM_INT);
+    $req->bindParam(':codeP', $codeP, PDO::PARAM_INT);
+    $req->bindParam('idL', $idL, PDO::PARAM_INT);
     $resultat = $req->execute();
     return $resultat;
 }

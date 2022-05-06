@@ -13,9 +13,17 @@
 						<div class="row form-group">
 							<div class="col-sm-2">
 								<label class="control-label modal-label">Nom:</label>
+								<label class="control-label modal-label">Adresse:</label>
+								<label class="control-label modal-label">CodePostal:</label>
+								<label class="control-label modal-label">Ville:</label>
+								<label class="control-label modal-label">Lieu:</label>
 							</div>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" name="nom" value="<?php echo $row['nom']; ?>">
+								<input type="text" class="form-control" name="adresse" value="<?php echo $row['adresse']; ?>">
+								<input type="text" class="form-control" name="codeP" value="<?php echo $row['codePostal']; ?>">
+								<input type="text" class="form-control" name="ville" value="<?php echo $row['ville']; ?>">
+								<input type="text" class="form-control" name="idL" value="<?php echo $row['idLieu']; ?>">
 							</div>
 						</div>
 					</div> 

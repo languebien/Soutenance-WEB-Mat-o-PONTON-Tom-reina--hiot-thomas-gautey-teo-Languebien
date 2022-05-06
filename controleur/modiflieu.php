@@ -21,8 +21,10 @@ if(isset($_POST['add'])){
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
     $nom = $_POST['nom'];	
+    $info = $_POST['info'];
+    $ile = $_POST['ile'];
     
-    $resultat = editLieux($nom,$id);
+    $resultat = editLieux($nom,$id,$info,$ile);
     if($resultat){
         $_SESSION['success'] = 'Lieu modifié';
     }		
