@@ -31,9 +31,9 @@
 		
 			<table class = "Tableau_CRUD">
 				<thead class = "Tableau_Entete">
-					<th class = "Tableau_TitreColonne">ID</th>
-					<th class = "Tableau_TitreColonne">PortDepart</th>
-					<th class = "Tableau_TitreColonne">PortArrivee</th>
+					<th class = "Tableau_TitreColonne">ID Liaison</th>
+					<th class = "Tableau_TitreColonne">Port de Depart</th>
+					<th class = "Tableau_TitreColonne">Port d'Arrivee</th>
 					<th class = "Tableau_TitreColonne">Secteur</th>
 					<th class = "Tableau_TitreColonne">Distance en Milles</th>
                     <th class = "Tableau_TitreColonne">Action</th>

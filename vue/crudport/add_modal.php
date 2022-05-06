@@ -23,7 +23,7 @@
                         <label class="control-label modal-label">Ville :</label>
                         <input type="text" class="form-control" name="ville" required>
 
-                        <label class="control-label modal-label">Lieu :</label>
+                        <label class="control-label modal-label">ID Lieu :</label>
                         <input type="text" class="form-control" name="lieu" required>
 					</div>
 				</div>

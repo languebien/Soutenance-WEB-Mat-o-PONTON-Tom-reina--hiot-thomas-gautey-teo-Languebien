@@ -11,17 +11,17 @@
 					<div class="container-fluid">
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
-							<div class="col-sm-2">
-								<label class="control-label modal-label">Identifiant port de depart:</label>
-								<label class="control-label modal-label">Identifiant port de arrivee:</label>
-								<label class="control-label modal-label">Identifiant port du secteur:</label>
-								<label class="control-label modal-label">milles a modifier:</label>
-							</div>
 							<div class="col-sm-10">
-								
+								<label class="control-label modal-label">ID Port Départ :</label>
 								<input type="text" class="form-control" name="idPD" value="<?php echo $row['idPortDepart']; ?>">
+
+								<label class="control-label modal-label">ID Port Arrivée :</label>
 								<input type="text" class="form-control" name="idPA" value="<?php echo $row['idPortArrivee']; ?>">
+
+								<label class="control-label modal-label">ID Secteur :</label>
 								<input type="text" class="form-control" name="idS" value="<?php echo $row['idSecteur']; ?>">
+
+								<label class="control-label modal-label">Milles :</label>
 								<input type="text" class="form-control" name="dMilles" value="<?php echo $row['dMilles']; ?>">
 
 							</div>
