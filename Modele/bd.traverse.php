@@ -2,7 +2,7 @@
 function getTraverse (){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
-    $SQL = "SELECT * FROM traverse;";
+    $SQL = "SELECT * FROM traverse INNER JOIN bateau ON traverse.idBateau = bateau.id";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array());
     $traverse = $stmt->fetchAll();

@@ -50,7 +50,7 @@
 								<td class = 'Tableau_TexteColonne'>".$row['numero']."</td>
 								<td class = 'Tableau_TexteColonne'>".$row['heureDep']."</td>
 								<td class = 'Tableau_TexteColonne'>".$row['dateDep']."</td>
-								<td class = 'Tableau_TexteColonne'>".$row['idBateau']."</td>
+								<td class = 'Tableau_TexteColonne'>".$row['nom']."</td>
 								<td class = 'Tableau_TexteColonne'>".$row['idLiaison']."</td>
 								
 								<td class = 'Tableau_TexteColonne'>
