@@ -57,7 +57,7 @@ function isAdmin() {
 
     $AdminOrNot = false;
 
-    if ($Statut['statut'] == "administrateur") {
+    if ($Statut['statut'] == "Administrateur") {
         $AdminOrNot = true;
     }
     return $AdminOrNot;

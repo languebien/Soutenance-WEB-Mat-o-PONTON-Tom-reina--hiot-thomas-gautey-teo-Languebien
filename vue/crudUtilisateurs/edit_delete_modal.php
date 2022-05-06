@@ -15,7 +15,10 @@
 								<label class="control-label modal-label">Statut:</label>
 							</div>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" name="statut" value="<?php echo $row['statut']; ?>">
+								<select class="form-control" name="statut">
+									<option value="Administrateur">Administrateur</option>
+									<option value="Utilisateur">Utilisateur</option>
+								</select>
 							</div>
 						</div>
 					</div> 
