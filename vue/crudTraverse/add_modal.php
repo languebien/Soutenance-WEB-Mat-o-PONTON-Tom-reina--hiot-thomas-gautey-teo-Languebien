@@ -4,14 +4,15 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <center><h4 class="modal-title" id="myModalLabel">Ajouter un nouveau bateau</h4></center>
+                <center><h4 class="modal-title" id="myModalLabel">Ajouter une nouvelle traversée</h4></center>
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
 			<form method="POST" action="?action=modifTraverse">
 				<div class="row form-group">
 					<div class="col-sm-2">
-						
+
+						<label class="control-label modal-label">Numéro:</label>
                         <label class="control-label modal-label">Bateau:</label>
                         <label class="control-label modal-label">Liaison:</label>
 					</div>

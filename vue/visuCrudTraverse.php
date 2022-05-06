@@ -33,12 +33,12 @@
 			
 			<table class = "Tableau_CRUD">
 				<thead class = "Tableau_Entete">
-					<th class = "Tableau_TitreColonne">numero</th>
-					<th class = "Tableau_TitreColonne">heureDep</th>
+					<th class = "Tableau_TitreColonne">Numero</th>
+					<th class = "Tableau_TitreColonne">Heure Départ</th>
 					
-					<th class = "Tableau_TitreColonne">dateDep</th>
-					<th class = "Tableau_TitreColonne">idBateau</th>
-					<th class = "Tableau_TitreColonne">idliaison</th>
+					<th class = "Tableau_TitreColonne">Date Départ</th>
+					<th class = "Tableau_TitreColonne">Bateau</th>
+					<th class = "Tableau_TitreColonne">Liaison</th>
 					<th class = "Tableau_TitreColonne">Action</th>
 				</thead>
 				<tbody>
