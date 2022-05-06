@@ -1,5 +1,5 @@
 <?php
-	include_once('Modele/bd.informations.inc.php');
+	include_once('Modele/bd.bateau.php');
 ?>
 		<div class = "Pizza">
 			<h1 class = "TitreInfo">Nos Bateaux</h1>
