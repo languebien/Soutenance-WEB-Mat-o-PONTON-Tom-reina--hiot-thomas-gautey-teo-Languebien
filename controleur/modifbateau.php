@@ -32,7 +32,7 @@ if(isset($_POST['edit'])){
     $nbV = $_POST['nbV'];
 
 
-    $resultat = addBateau($nom, $longueur, $largeur, $vitesse, $nbP, $nbV);
+    $resultat = editBateau($nom, $longueur, $largeur, $vitesse, $nbP, $nbV);
     if($resultat){
         $_SESSION["success"] = 'Bateau ajouté';
     }

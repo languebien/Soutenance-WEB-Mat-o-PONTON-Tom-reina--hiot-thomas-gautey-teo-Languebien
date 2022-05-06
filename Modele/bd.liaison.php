@@ -11,4 +11,31 @@ function getLiaison(){
     return $Liaison;
 }
 
+function addLiaison($idB,$idB2,$idS,$idM){
+    
+    $connexion = connexionPDO();
+    $req = $connexion->prepare('INSERT INTO liaison (idPortDepart,idPortArrivee,idSecteur,dMilles) VALUES (:port, :port2, :secteur, :milles)');
+    $req->bindParam(':port', $idB, PDO::PARAM_STR);
+    $req->bindParam(':port2', $idB2, PDO::PARAM_STR);
+    $req->bindParam(':secteur', $idS, PDO::PARAM_STR);
+    $req->bindParam(':milles', $idM, PDO::PARAM_STR);
+    $resultat = $req->execute();
+    return $resultat;
+}
+function editLiaison($id, $Milles){
+    $connexion = connexionPDO();	
+    $req = $connexion->prepare('UPDATE liaison SET dMilles = :dMilles WHERE id = :id');
+    $req->bindParam(':dMilles', $Milles, PDO::PARAM_STR);
+    $req->bindParam(':id', $id, PDO::PARAM_INT);
+    $resultat = $req->execute();
+    return $resultat;
+}
+function suprLiaison($id){
+    $connexion = connexionPDO();
+    $req = $connexion->prepare('DELETE FROM liaison WHERE id = :id ');
+    $req->bindParam(':id', $id, PDO::PARAM_INT);
+    $resultat = $req->execute();
+    return $resultat;
+}
+
 ?>

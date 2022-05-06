@@ -63,6 +63,18 @@ function isAdmin() {
     return $AdminOrNot;
 }
 
+function editUtilisateur($id, $Statut) {
+    
+    $connexion = connexionPDO();	
+    $req = $connexion->prepare('UPDATE utilisateur SET statut = :statut WHERE id = :id');
+    $req->bindParam(':statut', $Statut, PDO::PARAM_STR);
+    $req->bindParam(':id', $id, PDO::PARAM_INT);
+    $resultat = $req->execute();
+    return $resultat;
+}
+
+   
+
 if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     // prog principal de test
     header('Content-Type:text/plain');
