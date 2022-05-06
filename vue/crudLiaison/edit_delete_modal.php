@@ -12,10 +12,18 @@
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
 							<div class="col-sm-2">
+								<label class="control-label modal-label">Identifiant port de depart:</label>
+								<label class="control-label modal-label">Identifiant port de arrivee:</label>
+								<label class="control-label modal-label">Identifiant port du secteur:</label>
 								<label class="control-label modal-label">milles a modifier:</label>
 							</div>
 							<div class="col-sm-10">
+								
+								<input type="text" class="form-control" name="idPD" value="<?php echo $row['idPortDepart']; ?>">
+								<input type="text" class="form-control" name="idPA" value="<?php echo $row['idPortArrivee']; ?>">
+								<input type="text" class="form-control" name="idS" value="<?php echo $row['idSecteur']; ?>">
 								<input type="text" class="form-control" name="dMilles" value="<?php echo $row['dMilles']; ?>">
+
 							</div>
 						</div>
 					</div> 

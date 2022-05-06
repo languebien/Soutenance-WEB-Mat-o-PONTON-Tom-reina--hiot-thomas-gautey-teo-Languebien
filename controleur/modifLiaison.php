@@ -24,8 +24,11 @@ if(isset($_POST['add'])){
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
     $Milles = $_POST['dMilles'];	
+    $idPD = $_POST['idPA'];
+     $idPD = $_POST['idPD'];
    
-    $resultat = editLiaison($id,$Milles);
+   
+    $resultat = editLiaison($id,$Milles,$idPA,$idPD);
     if($resultat){
         $_SESSION['success'] = 'liaison modifié';
     }		

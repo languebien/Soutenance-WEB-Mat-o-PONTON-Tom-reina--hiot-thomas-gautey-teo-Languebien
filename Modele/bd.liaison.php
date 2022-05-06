@@ -4,7 +4,7 @@
 function getLiaison(){
     include_once('Modele/bd.inc.php');
     $connexion = connexionPDO();
-    $SQL = "SELECT liaison.id, p1.nom AS 'NomPortDepart', p2.nom AS 'NomPortArrivee', secteur.libelle AS 'secteur',liaison.dMilles FROM liaison INNER JOIN port p1 ON liaison.idPortDepart = p1.id inner join port p2 on liaison.idPortArrivee = p2.id INNER JOIN secteur ON liaison.idSecteur = secteur.id";
+    $SQL = "SELECT liaison.id, p1.nom AS 'NomPortDepart', p2.nom AS 'NomPortArrivee', secteur.libelle AS 'secteur',liaison.dMilles,liaison.idPortDepart,liaison.idPortArrivee, liaison.idSecteur FROM liaison INNER JOIN port p1 ON liaison.idPortDepart = p1.id inner join port p2 on liaison.idPortArrivee = p2.id INNER JOIN secteur ON liaison.idSecteur = secteur.id";
     $stmt = $connexion->prepare($SQL);
     $stmt->execute(array());
     $Liaison = $stmt->fetchAll();
@@ -22,11 +22,13 @@ function addLiaison($idB,$idB2,$idS,$idM){
     $resultat = $req->execute();
     return $resultat;
 }
-function editLiaison($id, $Milles){
+function editLiaison($id,$Milles,$idPA,$idPD){
     $connexion = connexionPDO();	
-    $req = $connexion->prepare('UPDATE liaison SET dMilles = :dMilles WHERE id = :id');
+    $req = $connexion->prepare('UPDATE liaison SET dMilles = :dMilles, idPortArrivee = :idPA, idPortDepart = :idPD WHERE id = :id');
     $req->bindParam(':dMilles', $Milles, PDO::PARAM_STR);
     $req->bindParam(':id', $id, PDO::PARAM_INT);
+    $req->bindParam(':idPA', $idPA, PDO::PARAM_INT);
+    $req->bindParam(':idPD', $idPD, PDO::PARAM_INT);
     $resultat = $req->execute();
     return $resultat;
 }
