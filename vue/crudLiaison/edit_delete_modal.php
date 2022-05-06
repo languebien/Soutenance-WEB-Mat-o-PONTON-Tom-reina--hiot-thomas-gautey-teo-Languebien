@@ -12,7 +12,7 @@
 						<input type="hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 						<div class="row form-group">
 							<div class="col-sm-2">
-								<label class="control-label modal-label">identifiant de la liaison:</label>
+								<label class="control-label modal-label">milles a modifier:</label>
 							</div>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" name="dMilles" value="<?php echo $row['dMilles']; ?>">

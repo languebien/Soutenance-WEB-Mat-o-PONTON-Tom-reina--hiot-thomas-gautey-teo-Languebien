@@ -3,12 +3,12 @@
 	
 
 	if(isset($_POST['add'])){
-		$numero = $_POST['numero'];
+		
 		$idB = $_POST['idBateau'];
 		$idL = $_POST['idLiaison'];
 		$connexion = connexionPDO();
-		$req = $connexion->prepare('INSERT INTO traverse (numero,idBateau,idLiaison) VALUES (:numero,:idBateau,:idLiaison)');
-		$req->bindParam(':numero', $numero, PDO::PARAM_STR);
+		$req = $connexion->prepare('INSERT INTO traverse (idBateau,idLiaison) VALUES (:idBateau,:idLiaison)');
+		
 		$req->bindParam(':idBateau', $idB, PDO::PARAM_STR);
 		$req->bindParam(':idLiaison', $idL, PDO::PARAM_STR);
 		$resultat = $req->execute();
