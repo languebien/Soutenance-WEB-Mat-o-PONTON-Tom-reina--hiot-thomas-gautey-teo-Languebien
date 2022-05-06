@@ -21,6 +21,11 @@
                         login : test@bts.sio<br/>
                         mot de passe : sio</p>
                 </div>
+                <div class = "Config">
+                    <p class = "ConfigText">Administrateur de test : <br/>
+                        login : contact@pizzaunlimited.online<br/>
+                        mot de passe : pizza</p>
+                </div>
             </form>
 
             <p class = "TitreInfo">Créer un compte</p>

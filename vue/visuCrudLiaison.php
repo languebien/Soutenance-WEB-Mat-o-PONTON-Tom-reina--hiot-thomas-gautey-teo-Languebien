@@ -3,7 +3,7 @@
 ?>
 		<div class = "Pizza">
 			<h1 class = "TitreInfo">CRUD Liaison</h1>
-			<p class = "TexteInfo">Ajoutez, modifiez et supprimez des Liaison.</p>
+			<p class = "TexteInfo">Ajoutez, modifiez et supprimez des Liaisons.</p>
 			<?php
 				if(isset($_SESSION['error'])){
 					echo

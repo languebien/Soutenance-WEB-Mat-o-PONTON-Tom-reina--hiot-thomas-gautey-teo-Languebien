@@ -3,14 +3,14 @@
 	
 
 	if(isset($_POST['add'])){
-		$idB = $_POST['bateau'];
-        $idB2 = $_POST['bateau2'];
+		$idB = $_POST['port'];
+        $idB2 = $_POST['port2'];
         $idS = $_POST['secteur'];
         $idM = $_POST['milles'];
 		$connexion = connexionPDO();
-		$req = $connexion->prepare('INSERT INTO liaison (idPortDepart,idPortArrivee,idSecteur,dMilles) VALUES (:bateau, :bateau2, :secteur, :milles)');
-		$req->bindParam(':bateau', $idB, PDO::PARAM_STR);
-        $req->bindParam(':bateau2', $idB2, PDO::PARAM_STR);
+		$req = $connexion->prepare('INSERT INTO liaison (idPortDepart,idPortArrivee,idSecteur,dMilles) VALUES (:port, :port2, :secteur, :milles)');
+		$req->bindParam(':port', $idB, PDO::PARAM_STR);
+        $req->bindParam(':port2', $idB2, PDO::PARAM_STR);
         $req->bindParam(':secteur', $idS, PDO::PARAM_STR);
         $req->bindParam(':milles', $idM, PDO::PARAM_STR);
 		$resultat = $req->execute();
