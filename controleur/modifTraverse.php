@@ -5,6 +5,7 @@ include ("Modele/bd.authentification.inc.php");
 
 $Traverse = getTraverse();
 
+// A J O U T E //
 if(isset($_POST['add'])){
 		
     $idB = $_POST['idBateau'];
@@ -19,6 +20,7 @@ if(isset($_POST['add'])){
     header('location: index.php?action=modifTraverse');
 }
 
+// M O D I F I E //
 if(isset($_POST['edit'])){
     $numero = $_POST['numero'];
     $idBateau = $_POST['idbateau'];	
@@ -35,6 +37,7 @@ if(isset($_POST['edit'])){
     header('location: index.php?action=modifTraverse');
 }
 
+// S U P R //
 if(isset($_POST['supr'])){
     $numero = $_POST['numero'];
     $resultat = suprTraverse($numero);
@@ -46,6 +49,8 @@ if(isset($_POST['supr'])){
     }
     header('location: index.php?action=modifTraverse');
 }
+
+
 include("vue/entete.php");
 include('vue/menu.php');
 include("vue/visuCrudTraverse.php");

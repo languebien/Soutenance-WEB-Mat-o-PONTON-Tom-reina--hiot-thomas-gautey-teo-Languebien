@@ -5,6 +5,7 @@ include ("Modele/bd.authentification.inc.php");
 
 $Ports = getPorts();
 
+// A J O U T E //
 if(isset($_POST['add'])){
     $nom = $_POST['nom'];
     $adresse = $_POST['adresse'];
@@ -22,6 +23,7 @@ if(isset($_POST['add'])){
     header('location: index.php?action=modifPort');
 }
 
+// M O D I F I E //
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
     $nom = $_POST['nom'];
@@ -40,6 +42,7 @@ if(isset($_POST['edit'])){
     header('location: index.php?action=modifPort');
 }
 
+// S U P R //
 if(isset($_POST['supr'])){
     $id = $_POST['id'];
     $resultat =suprPort($id);
@@ -51,6 +54,8 @@ if(isset($_POST['supr'])){
     }
     header('location: index.php?action=modifPort');
 }
+
+
 include("vue/entete.php");
 include('vue/menu.php');
 include("vue/visuCrudPorts.php");

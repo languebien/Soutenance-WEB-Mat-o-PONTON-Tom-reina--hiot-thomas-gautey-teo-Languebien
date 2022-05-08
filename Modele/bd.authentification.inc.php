@@ -2,6 +2,7 @@
 
 include_once "bd.utilisateur.inc.php";
 
+// Connexion //
 function login($mailU, $mdpU) {
     if (!isset($_SESSION)) {
         session_start();
@@ -11,12 +12,12 @@ function login($mailU, $mdpU) {
     $mdpBD = $util["mdpU"];
 
     if (trim($mdpBD) == trim(crypt($mdpU, $mdpBD))) {
-        // le mot de passe est celui de l'utilisateur dans la base de donnees
         $_SESSION["mailU"] = $mailU;
         $_SESSION["mdpU"] = $mdpBD;
     }
 }
 
+// Déconnexion //
 function logout() {
     if (!isset($_SESSION)) {
         session_start();
@@ -25,6 +26,7 @@ function logout() {
     unset($_SESSION["mdpU"]);
 }
 
+// Mail de l'utilisateur connecté //
 function getMailULoggedOn(){
     if (isLoggedOn()){
         $ret = $_SESSION["mailU"];
@@ -36,6 +38,7 @@ function getMailULoggedOn(){
         
 }
 
+// Est il connecté ? //
 function isLoggedOn() {
     if (!isset($_SESSION)) {
         session_start();
@@ -52,6 +55,7 @@ function isLoggedOn() {
     return $ret;
 }
 
+// Statut administrateur ? //
 function isAdmin() {
     $Statut = getStatutByMail($_SESSION["mailU"]);
 
@@ -63,6 +67,7 @@ function isAdmin() {
     return $AdminOrNot;
 }
 
+// Modifie le Statut //
 function editUtilisateur($id, $Statut) {
     
     $connexion = connexionPDO();	

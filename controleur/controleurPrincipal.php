@@ -32,9 +32,7 @@ function controleurPrincipal($action) {
 
     // C R U D   P O R T //
     $lesActions["modifPort"] = "modifPort.php";
-
     
-
     // C R U D   T R A V E R S E E //
     $lesActions["modifTraverse"] = "modifTraverse.php";
 

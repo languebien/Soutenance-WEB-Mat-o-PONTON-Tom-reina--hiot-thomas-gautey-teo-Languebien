@@ -5,6 +5,7 @@ include ("Modele/bd.authentification.inc.php");
 
 $Liaison = getLiaison();
 
+// A J O U T E //
 if(isset($_POST['add'])){
     $idB = $_POST['port'];
     $idB2 = $_POST['port2'];
@@ -21,6 +22,7 @@ if(isset($_POST['add'])){
     header('location: index.php?action=modifLiaison');
 }
 
+// M O D I F I E //
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
     $Milles = $_POST['dMilles'];	
@@ -38,6 +40,7 @@ if(isset($_POST['edit'])){
     header('location: index.php?action=modifLiaison');
 }
 
+// S U P R //
 if(isset($_POST['supr'])){
     $id = $_POST['id'];
     $resultat = suprLiaison($id);

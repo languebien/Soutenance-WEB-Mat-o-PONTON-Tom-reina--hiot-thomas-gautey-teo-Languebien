@@ -4,6 +4,8 @@ include ("Modele/bd.lieu.php");
 include ("Modele/bd.authentification.inc.php");
 
 $Lieux = getLieux();
+
+// A J O U T E //
 if(isset($_POST['add'])){
     $nom = $_POST['nom'];
     $info = $_POST['info'];
@@ -18,6 +20,7 @@ if(isset($_POST['add'])){
     header('location: index.php?action=modifLieu');
 }
 
+// M O D I F I E //
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
     $nom = $_POST['nom'];	
@@ -34,6 +37,7 @@ if(isset($_POST['edit'])){
     header('location: index.php?action=modifLieu');
 }
 
+// S U P R //
 if(isset($_POST['supr'])){
     $id = $_POST['id'];
     $resultat = suprLieux($id);

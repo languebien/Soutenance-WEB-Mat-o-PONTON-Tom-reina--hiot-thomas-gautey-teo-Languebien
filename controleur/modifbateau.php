@@ -5,6 +5,7 @@ include ("Modele/bd.authentification.inc.php");
 
 $Bateaux = getBateaux();
 
+// A J O U T E //
 if(isset($_POST['add'])){
     $nom = $_POST['nom'];
     $longueur = $_POST['longueur'];
@@ -23,6 +24,8 @@ if(isset($_POST['add'])){
     }
     header('location: index.php?action=modifBateau');
 }
+
+// M O D I F I E //
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
     $nom = $_POST['nom'];
@@ -42,6 +45,8 @@ if(isset($_POST['edit'])){
     }
     header('location: index.php?action=modifBateau');
 }
+
+// S U P R //
 if(isset($_POST['supr'])){
     $id = $_POST['id'];
 

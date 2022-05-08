@@ -5,6 +5,7 @@ include_once('Modele/bd.utilisateur.inc.php');
 
 $Utilisateurs = getUtilisateurs();
 
+// Modifie les Droits //
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
     $Statut = $_POST['statut'];	

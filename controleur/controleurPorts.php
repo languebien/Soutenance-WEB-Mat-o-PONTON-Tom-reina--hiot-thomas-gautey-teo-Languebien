@@ -7,6 +7,7 @@ include ("Modele/bd.authentification.inc.php");
 $Ports = getPortsAmeliore();
 $Secteurs = getSecteur();
 
+// Filtres //
 if(isset($_POST["FiltreSecteurs"])) {
     $SecteurSelection = htmlspecialchars($_POST["FiltreSecteurs"]);
 

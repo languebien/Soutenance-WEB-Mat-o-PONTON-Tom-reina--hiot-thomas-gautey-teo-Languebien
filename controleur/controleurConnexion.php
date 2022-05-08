@@ -19,17 +19,18 @@ else
 // C O N N E X I O N //
 login($mailU,$mdpU);
 
+// Récupère utilisateurs par mail //
 $Utilisateur = getUtilisateurByMailU($mailU);
 
-if (isLoggedOn()){ // si l'utilisateur est connecté on redirige vers le controleur monProfil
+// Connecté ou pas ? //
+if (isLoggedOn()){
 
     include("vue/entete.php");
     include('vue/menu.php');
     include "vue/visuConnecter.php";
     include("vue/pied_page.php");
 }
-else{ // l'utilisateur n'est pas connecté, on affiche le formulaire de connexion
-    // appel du script de vue 
+else{
     $titre = "authentification";
     include("vue/entete.php");
     include('vue/menu.php');
